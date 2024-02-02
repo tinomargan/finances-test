@@ -1,0 +1,2458 @@
+{
+    "items": [
+        {
+            "desc": "Sjednica Općinskog vijeća Općine Kostrena 27.07.2022.",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-07-26",
+            "paidDate": "2022-08-31",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Mama",
+            "amount": 13.272280841462605,
+            "gk": "G",
+            "eventDate": "2022-08-01",
+            "paidDate": "2022-08-01",
+            "amountHrk": 100
+        },
+        {
+            "desc": "Polog gotovine G",
+            "amount": -106.17824673170084,
+            "gk": "G",
+            "eventDate": "2022-08-01",
+            "paidDate": "2022-08-01",
+            "amountHrk": -800
+        },
+        {
+            "desc": "Polog gotovine K",
+            "amount": 106.17824673170084,
+            "gk": "K",
+            "eventDate": "2022-08-01",
+            "paidDate": "2022-08-01",
+            "amountHrk": 800
+        },
+        {
+            "desc": "Naknada za vođenje računa 07/22",
+            "amount": -1.5926737009755125,
+            "gk": "K",
+            "eventDate": "2022-07-31",
+            "paidDate": "2022-07-31",
+            "amountHrk": -12
+        },
+        {
+            "desc": "Opeth - ulaznica",
+            "amount": -31.18985997743712,
+            "gk": "K",
+            "eventDate": "2022-08-01",
+            "paidDate": "2022-08-01",
+            "amountHrk": -235
+        },
+        {
+            "desc": "Nordband j.d.o.o. - knjigovodstvo (GFI obrazac)",
+            "amount": -33.180702103656515,
+            "gk": "K",
+            "eventDate": "2022-08-01",
+            "paidDate": "2022-08-01",
+            "amountHrk": -250
+        },
+        {
+            "desc": "Naknada za plaćanje br. 11",
+            "amount": -0.16590351051828256,
+            "gk": "K",
+            "eventDate": "2022-08-01",
+            "paidDate": "2022-08-01",
+            "amountHrk": -1.25
+        },
+        {
+            "desc": "Nordband j.d.o.o. - sudska pristojba za postupak likvidacije",
+            "amount": -7.963368504877563,
+            "gk": "K",
+            "eventDate": "2022-08-03",
+            "paidDate": "2022-08-03",
+            "amountHrk": -60
+        },
+        {
+            "desc": "Naknada za plaćanje br. 13",
+            "amount": -0.2986263189329086,
+            "gk": "K",
+            "eventDate": "2022-08-03",
+            "paidDate": "2022-08-03",
+            "amountHrk": -2.25
+        },
+        {
+            "desc": "Nordband j.d.o.o. - objava oglasa u postupku likvidacije",
+            "amount": -13.272280841462605,
+            "gk": "K",
+            "eventDate": "2022-08-03",
+            "paidDate": "2022-08-03",
+            "amountHrk": -100
+        },
+        {
+            "desc": "Naknada za plaćanje br. 15",
+            "amount": -0.2986263189329086,
+            "gk": "K",
+            "eventDate": "2022-08-03",
+            "paidDate": "2022-08-03",
+            "amountHrk": -2.25
+        },
+        {
+            "desc": "Mama",
+            "amount": 26.54456168292521,
+            "gk": "G",
+            "eventDate": "2022-08-03",
+            "paidDate": "2022-08-03",
+            "amountHrk": 200
+        },
+        {
+            "desc": "Nordband j.d.o.o. - javni bilježnik - likvidacija",
+            "amount": -39.816842524387816,
+            "gk": "G",
+            "eventDate": "2022-08-03",
+            "paidDate": "2022-08-03",
+            "amountHrk": -300
+        },
+        {
+            "desc": "Plodine - tortilje, sladoled, coca cola, sommersby",
+            "amount": -26.54456168292521,
+            "gk": "G",
+            "eventDate": "2022-08-04",
+            "paidDate": "2022-08-04",
+            "amountHrk": -200
+        },
+        {
+            "desc": "FabFilter Pro-MB i Saturn 2",
+            "amount": -79.63368504877563,
+            "gk": "G",
+            "eventDate": "2022-08-06",
+            "paidDate": "2022-08-06",
+            "amountHrk": -600
+        },
+        {
+            "desc": "Mihael - za ulaznicu za Opeth",
+            "amount": 26.54456168292521,
+            "gk": "G",
+            "eventDate": "2022-08-02",
+            "paidDate": "2022-08-02",
+            "amountHrk": 200
+        },
+        {
+            "desc": "Karin - cvijeće za godišnjicu",
+            "amount": -33.180702103656515,
+            "gk": "K",
+            "eventDate": "2022-08-08",
+            "paidDate": "2022-08-08",
+            "amountHrk": -250
+        },
+        {
+            "desc": "Polog gotovine G",
+            "amount": -132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-08-08",
+            "paidDate": "2022-08-08",
+            "amountHrk": -1000
+        },
+        {
+            "desc": "Polog gotovine K",
+            "amount": 119.45052757316344,
+            "gk": "K",
+            "eventDate": "2022-08-08",
+            "paidDate": "2022-08-08",
+            "amountHrk": 900
+        },
+        {
+            "desc": "Šišanje",
+            "amount": -13.272280841462605,
+            "gk": "G",
+            "eventDate": "2022-08-08",
+            "paidDate": "2022-08-08",
+            "amountHrk": -100
+        },
+        {
+            "desc": "Parking",
+            "amount": -1.0617824673170084,
+            "gk": "K",
+            "eventDate": "2022-08-08",
+            "paidDate": "2022-08-08",
+            "amountHrk": -8
+        },
+        {
+            "desc": "Opeth - ulaznica za Mihaela",
+            "amount": -31.18985997743712,
+            "gk": "K",
+            "eventDate": "2022-08-08",
+            "paidDate": "2022-08-08",
+            "amountHrk": -235
+        },
+        {
+            "desc": "Ivona Brnelić - Musicool - korekcije vokala i miks",
+            "amount": 106.17824673170084,
+            "gk": "G",
+            "eventDate": "2022-08-09",
+            "paidDate": "2022-08-11",
+            "amountHrk": 800
+        },
+        {
+            "desc": "Apoteka i dućan - Maxflu, Lekadol, kiseli krastavci, kvasac ",
+            "amount": -17.253965093901385,
+            "gk": "K",
+            "eventDate": "2022-08-09",
+            "paidDate": "2022-08-09",
+            "amountHrk": -130
+        },
+        {
+            "desc": "Apoteka - Covid test",
+            "amount": -3.359214280974185,
+            "gk": "K",
+            "eventDate": "2022-08-09",
+            "paidDate": "2022-08-09",
+            "amountHrk": -25.31
+        },
+        {
+            "desc": "Cuga s Davidom i Mihaelom",
+            "amount": -13.272280841462605,
+            "gk": "G",
+            "eventDate": "2022-08-07",
+            "paidDate": "2022-08-07",
+            "amountHrk": -100
+        },
+        {
+            "desc": "Mrkopalj",
+            "amount": -10.617824673170084,
+            "gk": "K",
+            "eventDate": "2022-08-12",
+            "paidDate": "2022-08-12",
+            "amountHrk": -80
+        },
+        {
+            "desc": "Lidl - sve za cuganje - grickalice, cuga, kikiriki",
+            "amount": -25.656646094631363,
+            "gk": "K",
+            "eventDate": "2022-08-18",
+            "paidDate": "2022-08-18",
+            "amountHrk": -193.31
+        },
+        {
+            "desc": "Lea i Arijan - poklon Muller",
+            "amount": -6.994492003450793,
+            "gk": "K",
+            "eventDate": "2022-08-20",
+            "paidDate": "2022-08-20",
+            "amountHrk": -52.7
+        },
+        {
+            "desc": "Rino - Come Undone",
+            "amount": 92.90596589023824,
+            "gk": "G",
+            "eventDate": "2022-08-10",
+            "paidDate": "2022-08-31",
+            "amountHrk": 700
+        },
+        {
+            "desc": "dm - Axe deo stick i smjesa za burgere",
+            "amount": -6.476873050633751,
+            "gk": "K",
+            "eventDate": "2022-08-21",
+            "paidDate": "2022-08-21",
+            "amountHrk": -48.8
+        },
+        {
+            "desc": "Boonker - Notion, pizza, piva",
+            "amount": -39.816842524387816,
+            "gk": "G",
+            "eventDate": "2022-08-25",
+            "paidDate": "2022-08-25",
+            "amountHrk": -300
+        },
+        {
+            "desc": "Tether Tools cable",
+            "amount": -53.08912336585042,
+            "gk": "G",
+            "eventDate": "2022-08-25",
+            "paidDate": "2022-08-25",
+            "amountHrk": -400
+        },
+        {
+            "desc": "Rođendan - mama i tata",
+            "amount": 39.816842524387816,
+            "gk": "G",
+            "eventDate": "2022-08-29",
+            "paidDate": "2022-08-29",
+            "amountHrk": 300
+        },
+        {
+            "desc": "ZTC - snimanje biciklista povodom 10. rođendana",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-09-16",
+            "paidDate": "2022-11-24",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Rođendan - Čalogovići",
+            "amount": 39.816842524387816,
+            "gk": "G",
+            "eventDate": "2022-08-29",
+            "paidDate": "2022-08-29",
+            "amountHrk": 300
+        },
+        {
+            "desc": "Unstable Unicorns",
+            "amount": -13.272280841462605,
+            "gk": "G",
+            "eventDate": "2022-08-31",
+            "paidDate": "2022-08-31",
+            "amountHrk": -100
+        },
+        {
+            "desc": "Naknada za vođenje računa 08/22",
+            "amount": -1.5926737009755125,
+            "gk": "K",
+            "eventDate": "2022-08-31",
+            "paidDate": "2022-08-31",
+            "amountHrk": -12
+        },
+        {
+            "desc": "Pivo za na probu",
+            "amount": -13.272280841462605,
+            "gk": "G",
+            "eventDate": "2022-09-07",
+            "paidDate": "2022-09-07",
+            "amountHrk": -100
+        },
+        {
+            "desc": "Faks - diplomski",
+            "amount": -39.816842524387816,
+            "gk": "K",
+            "eventDate": "2022-09-18",
+            "paidDate": "2022-09-18",
+            "amountHrk": -300
+        },
+        {
+            "desc": "Naknada za transakciju",
+            "amount": -0.16590351051828256,
+            "gk": "K",
+            "eventDate": "2022-09-18",
+            "paidDate": "2022-09-18",
+            "amountHrk": -1.25
+        },
+        {
+            "desc": "Polog gotovine G",
+            "amount": -132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-09-12",
+            "paidDate": "2022-09-12",
+            "amountHrk": -1000
+        },
+        {
+            "desc": "Polog gotovine K",
+            "amount": 132.72280841462606,
+            "gk": "K",
+            "eventDate": "2022-09-12",
+            "paidDate": "2022-09-12",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Nordband j.d.o.o. - knjigovođa",
+            "amount": -82.95175525914128,
+            "gk": "K",
+            "eventDate": "2022-09-13",
+            "paidDate": "2022-09-13",
+            "amountHrk": -625
+        },
+        {
+            "desc": "Naknada za transakciju",
+            "amount": -0.16590351051828256,
+            "gk": "K",
+            "eventDate": "2022-09-13",
+            "paidDate": "2022-09-13",
+            "amountHrk": -1.25
+        },
+        {
+            "desc": "Rino - Parla Con Me",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-10-27",
+            "paidDate": "2022-11-03",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Rino - Trebaš Li Me",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-10-13",
+            "paidDate": "2022-10-21",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Lowepro ProTactic BP 450 AW II",
+            "amount": -189.0039153228482,
+            "gk": "G",
+            "eventDate": "2022-09-19",
+            "paidDate": "2022-09-20",
+            "amountHrk": -1424.05
+        },
+        {
+            "desc": "Peak Design Capture Camera Clip V3",
+            "amount": -69.67947441767868,
+            "gk": "G",
+            "eventDate": "2022-09-19",
+            "paidDate": "2022-09-20",
+            "amountHrk": -525
+        },
+        {
+            "desc": "Poklopac tijela fotoaparata i objektiva",
+            "amount": -4.977105315548477,
+            "gk": "G",
+            "eventDate": "2022-09-19",
+            "paidDate": "2022-09-20",
+            "amountHrk": -37.5
+        },
+        {
+            "desc": "Peak Design Slide",
+            "amount": -66.2286813988984,
+            "gk": "G",
+            "eventDate": "2022-09-19",
+            "paidDate": "2022-09-20",
+            "amountHrk": -499
+        },
+        {
+            "desc": "Dostava za 56, 57, 59 i 60",
+            "amount": -4.977105315548477,
+            "gk": "G",
+            "eventDate": "2022-09-19",
+            "paidDate": "2022-09-20",
+            "amountHrk": -37.5
+        },
+        {
+            "desc": "GLS dostavljač",
+            "amount": -0.922423518481651,
+            "gk": "G",
+            "eventDate": "2022-09-20",
+            "paidDate": "2022-09-20",
+            "amountHrk": -6.95
+        },
+        {
+            "desc": "Sjednica Općinskog vijeća Općine Kostrena 28.09.2022.",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-09-27",
+            "paidDate": "2022-11-24",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Fabula - HOP - dva radijska spota",
+            "amount": 53.08912336585042,
+            "gk": "K",
+            "eventDate": "2022-09-22",
+            "paidDate": "2022-11-06",
+            "amountHrk": 400
+        },
+        {
+            "desc": "Matko - SmallRig a7SIII - RS2 cage plate",
+            "amount": -21.235649346340168,
+            "gk": "G",
+            "eventDate": "2022-09-20",
+            "paidDate": "2022-09-20",
+            "amountHrk": -160
+        },
+        {
+            "desc": "Karin - šalica",
+            "amount": -26.54456168292521,
+            "gk": "G",
+            "eventDate": "2022-09-15",
+            "paidDate": "2022-09-15",
+            "amountHrk": -200
+        },
+        {
+            "desc": "Vans hoodie",
+            "amount": -66.36140420731303,
+            "gk": "G",
+            "eventDate": "2022-09-23",
+            "paidDate": "2022-09-23",
+            "amountHrk": -500
+        },
+        {
+            "desc": "Among Us plišanac",
+            "amount": -26.54456168292521,
+            "gk": "G",
+            "eventDate": "2022-09-23",
+            "paidDate": "2022-09-23",
+            "amountHrk": -200
+        },
+        {
+            "desc": "Mihael - uplata za autobusne karte",
+            "amount": 37.16238635609529,
+            "gk": "K",
+            "eventDate": "2022-09-24",
+            "paidDate": "2022-09-24",
+            "amountHrk": 280
+        },
+        {
+            "desc": "Arriva - autobusne karte",
+            "amount": -37.02966354768067,
+            "gk": "K",
+            "eventDate": "2022-09-24",
+            "paidDate": "2022-09-24",
+            "amountHrk": -279
+        },
+        {
+            "desc": "Soulcase - kava",
+            "amount": -13.272280841462605,
+            "gk": "G",
+            "eventDate": "2022-09-28",
+            "paidDate": "2022-09-28",
+            "amountHrk": -100
+        },
+        {
+            "desc": "Parking - sastanak David, Lumiere, itd.",
+            "amount": -2.6876368703961773,
+            "gk": "K",
+            "eventDate": "2022-09-29",
+            "paidDate": "2022-09-29",
+            "amountHrk": -20.25
+        },
+        {
+            "desc": "Naknada za vođenje računa 09/22",
+            "amount": -1.5926737009755125,
+            "gk": "K",
+            "eventDate": "2022-09-30",
+            "paidDate": "2022-09-30",
+            "amountHrk": -12
+        },
+        {
+            "desc": "Kajakiranje na Gacki",
+            "amount": -53.08912336585042,
+            "gk": "G",
+            "eventDate": "2022-10-01",
+            "paidDate": "2022-10-01",
+            "amountHrk": -400
+        },
+        {
+            "desc": "Teretana 10/22",
+            "amount": -26.54456168292521,
+            "gk": "G",
+            "eventDate": "2022-10-03",
+            "paidDate": "2022-10-03",
+            "amountHrk": -200
+        },
+        {
+            "desc": "Fabula - Equivalenza - radijski spot",
+            "amount": 39.816842524387816,
+            "gk": "K",
+            "eventDate": "2022-09-23",
+            "paidDate": "2022-11-06",
+            "amountHrk": 300
+        },
+        {
+            "desc": "Mama",
+            "amount": 66.36140420731303,
+            "gk": "G",
+            "eventDate": "2022-10-05",
+            "paidDate": "2022-10-05",
+            "amountHrk": 500
+        },
+        {
+            "desc": "Polog gotovine G",
+            "amount": -132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-10-10",
+            "paidDate": "2022-10-10",
+            "amountHrk": -1000
+        },
+        {
+            "desc": "Polog gotovine K",
+            "amount": 132.72280841462606,
+            "gk": "K",
+            "eventDate": "2022-10-10",
+            "paidDate": "2022-10-10",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Autocesta NP Rupa",
+            "amount": -1.0617824673170084,
+            "gk": "K",
+            "eventDate": "2022-10-08",
+            "paidDate": "2022-10-08",
+            "amountHrk": -8
+        },
+        {
+            "desc": "Parking - dnevna karta",
+            "amount": -9.025150972194572,
+            "gk": "K",
+            "eventDate": "2022-10-10",
+            "paidDate": "2022-10-10",
+            "amountHrk": -68
+        },
+        {
+            "desc": "Naknada za plaćanje 82",
+            "amount": -0.2986263189329086,
+            "gk": "K",
+            "eventDate": "2022-10-10",
+            "paidDate": "2022-10-10",
+            "amountHrk": -2.25
+        },
+        {
+            "desc": "Sjednica Općinskog vijeća Općine Kostrena 24.10.2022.",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-10-23",
+            "paidDate": "2022-11-24",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Sjednica Općinskog vijeća Općine Kostrena 30.11.2022.",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-11-29",
+            "paidDate": "2022-11-24",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Svečana sjednica Općinskog vijeća Općine Kostrena 06.12.2022.",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-12-05",
+            "paidDate": "2022-11-24",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Snimanje Diamond Dust - Mateo Jurčić",
+            "amount": 66.36140420731303,
+            "gk": "G",
+            "eventDate": "2022-10-21",
+            "paidDate": "2022-10-21",
+            "amountHrk": 500
+        },
+        {
+            "desc": "Fabula - HOP - dva radijska spota",
+            "amount": 79.63368504877563,
+            "gk": "K",
+            "eventDate": "2022-10-14",
+            "paidDate": "2022-11-06",
+            "amountHrk": 600
+        },
+        {
+            "desc": "Kafe",
+            "amount": -1.3272280841462605,
+            "gk": "G",
+            "eventDate": "2022-10-13",
+            "paidDate": "2022-10-13",
+            "amountHrk": -10
+        },
+        {
+            "desc": "YMS - band highlight",
+            "amount": 99.54210631096953,
+            "gk": "G",
+            "eventDate": "2022-09-24",
+            "paidDate": "2022-11-24",
+            "amountHrk": 750
+        },
+        {
+            "desc": "Cestarina - Ravna Gora",
+            "amount": -6.37069480390205,
+            "gk": "K",
+            "eventDate": "2022-10-14",
+            "paidDate": "2022-10-14",
+            "amountHrk": -48
+        },
+        {
+            "desc": "Frano - snimanje koncerta na Gradini",
+            "amount": 53.08912336585042,
+            "gk": "G",
+            "eventDate": "2022-08-27",
+            "paidDate": "2022-10-15",
+            "amountHrk": 400
+        },
+        {
+            "desc": "Fabula - HOP - radijski spot",
+            "amount": 39.816842524387816,
+            "gk": "K",
+            "eventDate": "2022-10-16",
+            "paidDate": "2022-11-06",
+            "amountHrk": 300
+        },
+        {
+            "desc": "Bauhaus",
+            "amount": -53.08912336585042,
+            "gk": "G",
+            "eventDate": "2022-10-19",
+            "paidDate": "2022-10-19",
+            "amountHrk": -400
+        },
+        {
+            "desc": "New Yorker za spot",
+            "amount": -43.718893091777815,
+            "gk": "K",
+            "eventDate": "2022-10-20",
+            "paidDate": "2022-10-20",
+            "amountHrk": -329.4
+        },
+        {
+            "desc": "Parking - šišanje",
+            "amount": -1.0617824673170084,
+            "gk": "K",
+            "eventDate": "2022-10-23",
+            "paidDate": "2022-10-23",
+            "amountHrk": -8
+        },
+        {
+            "desc": "Parking Mateo za spot",
+            "amount": -1.8581193178047646,
+            "gk": "K",
+            "eventDate": "2022-10-24",
+            "paidDate": "2022-10-24",
+            "amountHrk": -14
+        },
+        {
+            "desc": "Twix, KitKat i Corny za spot",
+            "amount": -3.9113411639790296,
+            "gk": "K",
+            "eventDate": "2022-10-25",
+            "paidDate": "2022-10-25",
+            "amountHrk": -29.47
+        },
+        {
+            "desc": "Parking - Đir - Liburnia Riviera Hoteli",
+            "amount": -7.299754462804432,
+            "gk": "K",
+            "eventDate": "2022-10-26",
+            "paidDate": "2022-10-26",
+            "amountHrk": -55
+        },
+        {
+            "desc": "Đir - Liburnia Riviera Hoteli",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-10-26",
+            "paidDate": "2023-02-02",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Parking - Đir - naknada za Liburnia Riviera Hotele",
+            "amount": 7.299754462804432,
+            "gk": "G",
+            "eventDate": "2022-10-26",
+            "paidDate": "2023-02-02",
+            "amountHrk": 55
+        },
+        {
+            "desc": "Đir - Vividenti Kalmar",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-10-27",
+            "paidDate": "2023-02-02",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Karlovac - cestarina",
+            "amount": -13.272280841462605,
+            "gk": "G",
+            "eventDate": "2022-10-28",
+            "paidDate": "2022-10-28",
+            "amountHrk": -100
+        },
+        {
+            "desc": "Karlovac - akvarij",
+            "amount": -7.963368504877563,
+            "gk": "G",
+            "eventDate": "2022-10-28",
+            "paidDate": "2022-10-28",
+            "amountHrk": -60
+        },
+        {
+            "desc": "Karlovac - ručak",
+            "amount": -55.478133917313684,
+            "gk": "K",
+            "eventDate": "2022-10-28",
+            "paidDate": "2022-10-28",
+            "amountHrk": -418
+        },
+        {
+            "desc": "Polog gotovine G",
+            "amount": -132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-10-28",
+            "paidDate": "2022-10-28",
+            "amountHrk": -1000
+        },
+        {
+            "desc": "Polog gotovine K",
+            "amount": 132.72280841462606,
+            "gk": "K",
+            "eventDate": "2022-10-28",
+            "paidDate": "2022-10-28",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Đir - Dux Nekretnine",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-10-30",
+            "paidDate": "2023-02-02",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Feelworld LUT7 PRO 7\" Monitor",
+            "amount": -258.80947640852077,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-24",
+            "amountHrk": -1950
+        },
+        {
+            "desc": "SmallRig VB99 Mini V-Mount Battery 3580",
+            "amount": -421.3949167164377,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-24",
+            "amountHrk": -3175
+        },
+        {
+            "desc": "SmallRig NP-FW50 Dummy Battery Charging Cable 2921",
+            "amount": -24.885526577742382,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -187.5
+        },
+        {
+            "desc": "SmallRig Ronin-SC Mounting Clamp BSS2412",
+            "amount": -27.87178976707147,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -210
+        },
+        {
+            "desc": "SmallRig Gimbal Handgrip BSS2340",
+            "amount": -77.14513239100138,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -581.25
+        },
+        {
+            "desc": "SmallRig Super Clamp with Ballhead Arm 2161",
+            "amount": -13.272280841462605,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-24",
+            "amountHrk": -100
+        },
+        {
+            "desc": "SmallRig Adjustable Gimbal Mount 2889",
+            "amount": -39.816842524387816,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-24",
+            "amountHrk": -300
+        },
+        {
+            "desc": "SmallRig Cold Shoe 2-pack 2060",
+            "amount": -13.272280841462605,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-24",
+            "amountHrk": -100
+        },
+        {
+            "desc": "SmallRig Mounting Plate 2710",
+            "amount": -13.272280841462605,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -100
+        },
+        {
+            "desc": "SmallRig Mini V-Mount Battery Plate 2987",
+            "amount": -31.521666998473687,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -237.5
+        },
+        {
+            "desc": "SmallRig Folding Tool Set 2213",
+            "amount": -26.54456168292521,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -200
+        },
+        {
+            "desc": "SmallRig Arca-Type Quick Release Clamp DBC2506",
+            "amount": -36.49877231402216,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -275
+        },
+        {
+            "desc": "SmallRig CT180 Video Tripod 3760",
+            "amount": -152.63122967681994,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -1150
+        },
+        {
+            "desc": "Saramonic WM4C-C35 3.5mm Output Cable",
+            "amount": -6.636140420731302,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -50
+        },
+        {
+            "desc": "Tilta Seamless Focus Gear Ring 62.5mm - 64.5mm",
+            "amount": -2.8203596788108034,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -21.25
+        },
+        {
+            "desc": "Tilta Seamless Focus Gear Ring 66mm - 68mm",
+            "amount": -2.8203596788108034,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -21.25
+        },
+        {
+            "desc": "SmallRig Cage with Silicone Handle 3164",
+            "amount": -61.384298891764544,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -462.5
+        },
+        {
+            "desc": "SmallRig HDMI Cable Clamp 1822",
+            "amount": -31.521666998473687,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -237.5
+        },
+        {
+            "desc": "Filmsticks Hook&Loop Ties",
+            "amount": -16.590351051828257,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-24",
+            "amountHrk": -125
+        },
+        {
+            "desc": "Calibrite ColorChecker Gray Balance",
+            "amount": -53.08912336585042,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -400
+        },
+        {
+            "desc": "Lowepro GearUp Case Large",
+            "amount": -23.83038025084611,
+            "gk": "G",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-27",
+            "amountHrk": -179.55
+        },
+        {
+            "desc": "Kava - Marija",
+            "amount": -11.945052757316343,
+            "gk": "G",
+            "eventDate": "2022-10-29",
+            "paidDate": "2022-10-29",
+            "amountHrk": -90
+        },
+        {
+            "desc": "Soulcase - cuga",
+            "amount": -2.654456168292521,
+            "gk": "G",
+            "eventDate": "2022-10-30",
+            "paidDate": "2022-10-30",
+            "amountHrk": -20
+        },
+        {
+            "desc": "Ulaznice - Alter Bridge, Halestorm, Mammoth WVH",
+            "amount": -63.043333996947375,
+            "gk": "K",
+            "eventDate": "2022-10-30",
+            "paidDate": "2022-10-30",
+            "amountHrk": -475
+        },
+        {
+            "desc": "Fabula - HOP - četiri radijska spota",
+            "amount": 159.26737009755126,
+            "gk": "G",
+            "eventDate": "2022-10-30",
+            "paidDate": "2022-11-27",
+            "amountHrk": 1200
+        },
+        {
+            "desc": "Naknada za vođenje računa 10/22",
+            "amount": -1.5926737009755125,
+            "gk": "K",
+            "eventDate": "2022-10-31",
+            "paidDate": "2022-10-31",
+            "amountHrk": -12
+        },
+        {
+            "desc": "Poklon za Gitu",
+            "amount": -15.146326896277126,
+            "gk": "K",
+            "eventDate": "2022-11-02",
+            "paidDate": "2022-11-02",
+            "amountHrk": -114.12
+        },
+        {
+            "desc": "Negdje nestalo",
+            "amount": -43.7985267768266,
+            "gk": "G",
+            "eventDate": "2022-11-03",
+            "paidDate": "2022-11-03",
+            "amountHrk": -330
+        },
+        {
+            "desc": "Mama i tata",
+            "amount": 10.617824673170084,
+            "gk": "G",
+            "eventDate": "2022-11-04",
+            "paidDate": "2022-11-04",
+            "amountHrk": 80
+        },
+        {
+            "desc": "Soulcase - kafe",
+            "amount": -1.3272280841462605,
+            "gk": "G",
+            "eventDate": "2022-11-04",
+            "paidDate": "2022-11-04",
+            "amountHrk": -10
+        },
+        {
+            "desc": "Majoneza",
+            "amount": -3.9816842524387814,
+            "gk": "G",
+            "eventDate": "2022-11-04",
+            "paidDate": "2022-11-04",
+            "amountHrk": -30
+        },
+        {
+            "desc": "Mueller - flasteri",
+            "amount": -6.330877961377663,
+            "gk": "K",
+            "eventDate": "2022-11-06",
+            "paidDate": "2022-11-06",
+            "amountHrk": -47.7
+        },
+        {
+            "desc": "Rino - Purple Rain",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-11-26",
+            "paidDate": "2022-11-27",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Rino - Space Traveler",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-12-17",
+            "paidDate": "2023-01-02",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Fabula - HOP - jedan radijski spot - Lučko",
+            "amount": 39.816842524387816,
+            "gk": "G",
+            "eventDate": "2022-11-06",
+            "paidDate": "2022-11-27",
+            "amountHrk": 300
+        },
+        {
+            "desc": "Fabula - PSC Primorje - jedan radijski spot",
+            "amount": 39.816842524387816,
+            "gk": "G",
+            "eventDate": "2022-11-06",
+            "paidDate": "2022-11-27",
+            "amountHrk": 300
+        },
+        {
+            "desc": "Autotrolej 2. zona",
+            "amount": -3.318070210365651,
+            "gk": "G",
+            "eventDate": "2022-11-06",
+            "paidDate": "2022-11-06",
+            "amountHrk": -25
+        },
+        {
+            "desc": "Pizza u Mlinaru",
+            "amount": -1.9908421262193907,
+            "gk": "G",
+            "eventDate": "2022-11-06",
+            "paidDate": "2022-11-06",
+            "amountHrk": -15
+        },
+        {
+            "desc": "Tata",
+            "amount": 3.9816842524387814,
+            "gk": "G",
+            "eventDate": "2022-11-07",
+            "paidDate": "2022-11-07",
+            "amountHrk": 30
+        },
+        {
+            "desc": "Mama",
+            "amount": 9.290596589023822,
+            "gk": "G",
+            "eventDate": "2022-11-08",
+            "paidDate": "2022-11-08",
+            "amountHrk": 70
+        },
+        {
+            "desc": "Parking - Kaiser Immobilien",
+            "amount": -3.318070210365651,
+            "gk": "K",
+            "eventDate": "2022-11-07",
+            "paidDate": "2022-11-07",
+            "amountHrk": -25
+        },
+        {
+            "desc": "Kaiser Immobilien - fotografiranje u uredu",
+            "amount": 200,
+            "gk": "G",
+            "eventDate": "2022-11-07",
+            "paidDate": "2022-11-21",
+            "amountHrk": 1506.9
+        },
+        {
+            "desc": "Mama",
+            "amount": 26.54456168292521,
+            "gk": "G",
+            "eventDate": "2022-11-10",
+            "paidDate": "2022-11-10",
+            "amountHrk": 200
+        },
+        {
+            "desc": "Mlinar",
+            "amount": -3.9816842524387814,
+            "gk": "G",
+            "eventDate": "2022-11-10",
+            "paidDate": "2022-11-10",
+            "amountHrk": -30
+        },
+        {
+            "desc": "Teretana 11/22",
+            "amount": -27.87178976707147,
+            "gk": "G",
+            "eventDate": "2022-11-08",
+            "paidDate": "2022-11-08",
+            "amountHrk": -210
+        },
+        {
+            "desc": "Soulcase - cuga",
+            "amount": -2.654456168292521,
+            "gk": "G",
+            "eventDate": "2022-11-09",
+            "paidDate": "2022-11-09",
+            "amountHrk": -20
+        },
+        {
+            "desc": "Hlače za teretanu",
+            "amount": -38.48961444024155,
+            "gk": "G",
+            "eventDate": "2022-11-10",
+            "paidDate": "2022-11-10",
+            "amountHrk": -290
+        },
+        {
+            "desc": "Dao Matku",
+            "amount": -19.908421262193908,
+            "gk": "G",
+            "eventDate": "2022-11-14",
+            "paidDate": "2022-11-14",
+            "amountHrk": -150
+        },
+        {
+            "desc": "Anker punjač i kabel",
+            "amount": -53.08912336585042,
+            "gk": "G",
+            "eventDate": "2022-11-14",
+            "paidDate": "2022-11-14",
+            "amountHrk": -400
+        },
+        {
+            "desc": "Parking - Kaiser Immobilien",
+            "amount": -0.6636140420731302,
+            "gk": "K",
+            "eventDate": "2022-11-21",
+            "paidDate": "2022-11-21",
+            "amountHrk": -5
+        },
+        {
+            "desc": "Novi čepići i DC kabel s Thomanna",
+            "amount": -31.85347401951025,
+            "gk": "K",
+            "eventDate": "2022-11-27",
+            "paidDate": "2022-11-27",
+            "amountHrk": -240
+        },
+        {
+            "desc": "Sonnox Oxford Inflator",
+            "amount": -43.34859645630102,
+            "gk": "K",
+            "eventDate": "2022-11-22",
+            "paidDate": "2022-11-22",
+            "amountHrk": -326.61
+        },
+        {
+            "desc": "AIXDSP MultiBand Gate",
+            "amount": -59.28993297498175,
+            "gk": "K",
+            "eventDate": "2022-11-24",
+            "paidDate": "2022-11-24",
+            "amountHrk": -446.72
+        },
+        {
+            "desc": "Tuc, Twix i Snickers",
+            "amount": -4.375870993430221,
+            "gk": "K",
+            "eventDate": "2022-11-25",
+            "paidDate": "2022-11-26",
+            "amountHrk": -32.97
+        },
+        {
+            "desc": "Fabula - HOP - jedan radijski spot - HOP subota",
+            "amount": 39.816842524387816,
+            "gk": "K",
+            "eventDate": "2022-11-27",
+            "paidDate": "2022-12-12",
+            "amountHrk": 300
+        },
+        {
+            "desc": "Dodatno za Aviteh Black Friday",
+            "amount": -12.422854867608997,
+            "gk": "G",
+            "eventDate": "2022-11-27",
+            "paidDate": "2022-11-27",
+            "amountHrk": -93.6
+        },
+        {
+            "desc": "Parking za šišanje",
+            "amount": -1.0617824673170084,
+            "gk": "K",
+            "eventDate": "2022-11-30",
+            "paidDate": "2022-11-30",
+            "amountHrk": -8
+        },
+        {
+            "desc": "Šišanje",
+            "amount": -6.636140420731302,
+            "gk": "G",
+            "eventDate": "2022-11-30",
+            "paidDate": "2022-11-30",
+            "amountHrk": -50
+        },
+        {
+            "desc": "CN - Zagreb i Čakovec pt 1",
+            "amount": -82.54695069347667,
+            "gk": "K",
+            "eventDate": "2022-12-02",
+            "paidDate": "2022-12-02",
+            "amountHrk": -621.95
+        },
+        {
+            "desc": "CN - Zagreb i Čakovec pt 2",
+            "amount": -39.816842524387816,
+            "gk": "G",
+            "eventDate": "2022-12-02",
+            "paidDate": "2022-12-02",
+            "amountHrk": -300
+        },
+        {
+            "desc": "Naknada za vođenje računa 11/22",
+            "amount": -1.5926737009755125,
+            "gk": "K",
+            "eventDate": "2022-12-02",
+            "paidDate": "2022-12-02",
+            "amountHrk": -12
+        },
+        {
+            "desc": "Pripis pasivne kamate glavnici",
+            "amount": 0.0013272280841462604,
+            "gk": "K",
+            "eventDate": "2022-12-02",
+            "paidDate": "2022-12-02",
+            "amountHrk": 0.01
+        },
+        {
+            "desc": "Tati za gorivo za Zagreb i Čakovec",
+            "amount": -66.36140420731303,
+            "gk": "G",
+            "eventDate": "2022-12-05",
+            "paidDate": "2022-12-05",
+            "amountHrk": -500
+        },
+        {
+            "desc": "Mihael za putne troškove za Zagreb i Čakovec",
+            "amount": 119.45052757316344,
+            "gk": "K",
+            "eventDate": "2022-12-05",
+            "paidDate": "2022-12-05",
+            "amountHrk": 900
+        },
+        {
+            "desc": "Sv. Nikola",
+            "amount": -5.308912336585042,
+            "gk": "G",
+            "eventDate": "2022-12-05",
+            "paidDate": "2022-12-05",
+            "amountHrk": -40
+        },
+        {
+            "desc": "Tajo",
+            "amount": 13.272280841462605,
+            "gk": "G",
+            "eventDate": "2022-12-06",
+            "paidDate": "2022-12-06",
+            "amountHrk": 100
+        },
+        {
+            "desc": "Fabula - dva radijska spota - Nolte kuhinje i ZTC prosinac",
+            "amount": 79.63368504877563,
+            "gk": "K",
+            "eventDate": "2022-12-08",
+            "paidDate": "2022-12-12",
+            "amountHrk": 600
+        },
+        {
+            "desc": "Parking - Soulcase Palach",
+            "amount": -2.654456168292521,
+            "gk": "K",
+            "eventDate": "2022-12-08",
+            "paidDate": "2022-12-08",
+            "amountHrk": -20
+        },
+        {
+            "desc": "HDS Zamp",
+            "amount": 22.649147255955935,
+            "gk": "K",
+            "eventDate": "2022-12-11",
+            "paidDate": "2022-12-11",
+            "amountHrk": 170.65
+        },
+        {
+            "desc": "SmallRig Ultra Slim 4K HDMI Cable (D to A) 55cm 3043",
+            "amount": -13.570907160395514,
+            "gk": "K",
+            "eventDate": "2022-12-11",
+            "paidDate": "2022-12-11",
+            "amountHrk": -102.25
+        },
+        {
+            "desc": "Parking - utakmica",
+            "amount": -1.5926737009755125,
+            "gk": "K",
+            "eventDate": "2022-12-12",
+            "paidDate": "2022-12-12",
+            "amountHrk": -12
+        },
+        {
+            "desc": "King's Brewpub Kolodvor - utakmica",
+            "amount": -10.617824673170084,
+            "gk": "G",
+            "eventDate": "2022-12-12",
+            "paidDate": "2022-12-12",
+            "amountHrk": -80
+        },
+        {
+            "desc": "Fabula - HOP - Vrbovec",
+            "amount": 39.816842524387816,
+            "gk": "K",
+            "eventDate": "2022-12-13",
+            "paidDate": "2023-01-30",
+            "amountHrk": 300
+        },
+        {
+            "desc": "Soulcase - pizza",
+            "amount": -5.308912336585042,
+            "gk": "K",
+            "eventDate": "2022-12-13",
+            "paidDate": "2022-12-13",
+            "amountHrk": -40
+        },
+        {
+            "desc": "Soulcase - cuga",
+            "amount": -2.654456168292521,
+            "gk": "G",
+            "eventDate": "2022-12-13",
+            "paidDate": "2022-12-13",
+            "amountHrk": -20
+        },
+        {
+            "desc": "Kaiser Immobilien - fotografiranje domjenka",
+            "amount": 49.10743911341164,
+            "gk": "G",
+            "eventDate": "2022-12-14",
+            "paidDate": "2022-12-14",
+            "amountHrk": 370
+        },
+        {
+            "desc": "Plodine - shower gelovi i grickalice za Karin",
+            "amount": -16.814652598048973,
+            "gk": "K",
+            "eventDate": "2022-12-15",
+            "paidDate": "2022-12-15",
+            "amountHrk": -126.69
+        },
+        {
+            "desc": "Karin vraća za grickalice",
+            "amount": 5.308912336585042,
+            "gk": "K",
+            "eventDate": "2022-12-15",
+            "paidDate": "2022-12-15",
+            "amountHrk": 40
+        },
+        {
+            "desc": "Cuga - utakmica",
+            "amount": -9.290596589023822,
+            "gk": "G",
+            "eventDate": "2022-12-16",
+            "paidDate": "2022-12-16",
+            "amountHrk": -70
+        },
+        {
+            "desc": "Mama",
+            "amount": 26.54456168292521,
+            "gk": "G",
+            "eventDate": "2022-12-16",
+            "paidDate": "2022-12-16",
+            "amountHrk": 200
+        },
+        {
+            "desc": "Šišanje",
+            "amount": -6.636140420731302,
+            "gk": "G",
+            "eventDate": "2022-12-21",
+            "paidDate": "2022-12-21",
+            "amountHrk": -50
+        },
+        {
+            "desc": "Rokovnik za Karmen",
+            "amount": -15.38257349525516,
+            "gk": "K",
+            "eventDate": "2022-12-21",
+            "paidDate": "2022-12-21",
+            "amountHrk": -115.9
+        },
+        {
+            "desc": "Kartica za bus",
+            "amount": -3.3844316145729643,
+            "gk": "K",
+            "eventDate": "2022-12-21",
+            "paidDate": "2022-12-21",
+            "amountHrk": -25.5
+        },
+        {
+            "desc": "Burek",
+            "amount": -2.654456168292521,
+            "gk": "G",
+            "eventDate": "2022-12-21",
+            "paidDate": "2022-12-21",
+            "amountHrk": -20
+        },
+        {
+            "desc": "Uvez za diplomski rad",
+            "amount": -13.272280841462605,
+            "gk": "G",
+            "eventDate": "2022-12-22",
+            "paidDate": "2022-12-22",
+            "amountHrk": -100
+        },
+        {
+            "desc": "Hrenovka u pecivu i krafna",
+            "amount": -2.654456168292521,
+            "gk": "G",
+            "eventDate": "2022-12-22",
+            "paidDate": "2022-12-22",
+            "amountHrk": -20
+        },
+        {
+            "desc": "Pevex - lampice i keksići",
+            "amount": -5.358019775698454,
+            "gk": "K",
+            "eventDate": "2022-12-23",
+            "paidDate": "2022-12-23",
+            "amountHrk": -40.37
+        },
+        {
+            "desc": "Easysong Hungry Eyes",
+            "amount": -15.386555179507598,
+            "gk": "K",
+            "eventDate": "2022-12-27",
+            "paidDate": "2022-12-27",
+            "amountHrk": -115.93
+        },
+        {
+            "desc": "Cuga na kućicama",
+            "amount": -42.471298692680335,
+            "gk": "G",
+            "eventDate": "2022-12-28",
+            "paidDate": "2022-12-28",
+            "amountHrk": -320
+        },
+        {
+            "desc": "Matko prodao drona",
+            "amount": 132.72280841462606,
+            "gk": "G",
+            "eventDate": "2022-12-28",
+            "paidDate": "2022-12-29",
+            "amountHrk": 1000
+        },
+        {
+            "desc": "Soulcase cuga",
+            "amount": -1.3272280841462605,
+            "gk": "G",
+            "eventDate": "2022-12-29",
+            "paidDate": "2022-12-29",
+            "amountHrk": -10
+        },
+        {
+            "desc": "Mama",
+            "amount": 26.54456168292521,
+            "gk": "G",
+            "eventDate": "2022-12-29",
+            "paidDate": "2022-12-29",
+            "amountHrk": 200
+        },
+        {
+            "desc": "Polog gotovine G",
+            "amount": -157.940142013405,
+            "gk": "G",
+            "eventDate": "2022-12-29",
+            "paidDate": "2022-12-29",
+            "amountHrk": -1190
+        },
+        {
+            "desc": "Polog gotovine K",
+            "amount": 157.940142013405,
+            "gk": "K",
+            "eventDate": "2022-12-29",
+            "paidDate": "2022-12-29",
+            "amountHrk": 1190
+        },
+        {
+            "desc": "Nova godina",
+            "amount": -17.253965093901385,
+            "gk": "K",
+            "eventDate": "2022-12-30",
+            "paidDate": "2022-12-30",
+            "amountHrk": -130
+        },
+        {
+            "desc": "Naknada za vođenje računa 01/23",
+            "amount": -3.18,
+            "gk": "K",
+            "eventDate": "2022-12-31",
+            "paidDate": "2022-12-31",
+            "amountHrk": -23.95971
+        },
+        {
+            "desc": "Rino - božićnica",
+            "amount": 135,
+            "gk": "G",
+            "eventDate": "2023-01-02",
+            "paidDate": "2023-01-02",
+            "amountHrk": 1017.1575
+        },
+        {
+            "desc": "Parking - šišanje",
+            "amount": -2,
+            "gk": "K",
+            "eventDate": "2023-01-04",
+            "paidDate": "2023-01-04",
+            "amountHrk": -15.069
+        },
+        {
+            "desc": "Kabel kod Kariolića",
+            "amount": -10,
+            "gk": "G",
+            "eventDate": "2023-01-04",
+            "paidDate": "2023-01-04",
+            "amountHrk": -75.345
+        },
+        {
+            "desc": "Cuga s Marijom part 1",
+            "amount": -6.8,
+            "gk": "K",
+            "eventDate": "2023-01-03",
+            "paidDate": "2023-01-03",
+            "amountHrk": -51.2346
+        },
+        {
+            "desc": "Cuga s Marijom part 2",
+            "amount": -11.47,
+            "gk": "G",
+            "eventDate": "2023-01-03",
+            "paidDate": "2023-01-03",
+            "amountHrk": -86.42071500000002
+        },
+        {
+            "desc": "Soulcase - Arijan - snimanje Attic Acoustic i Hungry Eyes",
+            "amount": -69,
+            "gk": "K",
+            "eventDate": "2023-01-01",
+            "paidDate": "2023-01-04",
+            "amountHrk": -519.8805
+        },
+        {
+            "desc": "Bohinj - apartman",
+            "amount": -160.2,
+            "gk": "K",
+            "eventDate": "2023-01-03",
+            "paidDate": "2023-01-03",
+            "amountHrk": -1207.0269
+        },
+        {
+            "desc": "Bohinj - vinjeta",
+            "amount": -15,
+            "gk": "K",
+            "eventDate": "2023-01-05",
+            "paidDate": "2023-01-05",
+            "amountHrk": -113.01750000000001
+        },
+        {
+            "desc": "Bohinj - cestarina ‐ Rupa",
+            "amount": -1,
+            "gk": "K",
+            "eventDate": "2023-01-05",
+            "paidDate": "2023-01-05",
+            "amountHrk": -7.5345
+        },
+        {
+            "desc": "Bohinj - McDonald's - Vrata Jadrana",
+            "amount": -12.25,
+            "gk": "K",
+            "eventDate": "2023-01-07",
+            "paidDate": "2023-01-07",
+            "amountHrk": -92.29762500000001
+        },
+        {
+            "desc": "Bohinj - cestarina - Rupa",
+            "amount": -1,
+            "gk": "G",
+            "eventDate": "2023-01-07",
+            "paidDate": "2023-01-07",
+            "amountHrk": -7.5345
+        },
+        {
+            "desc": "Bohinj - Lidl",
+            "amount": -18.16,
+            "gk": "G",
+            "eventDate": "2023-01-05",
+            "paidDate": "2023-01-05",
+            "amountHrk": -136.82652000000002
+        },
+        {
+            "desc": "Bohinj - Špar",
+            "amount": -7.35,
+            "gk": "G",
+            "eventDate": "2023-01-05",
+            "paidDate": "2023-01-05",
+            "amountHrk": -55.378575
+        },
+        {
+            "desc": "Bohinj - pizza",
+            "amount": -23.5,
+            "gk": "G",
+            "eventDate": "2023-01-05",
+            "paidDate": "2023-01-05",
+            "amountHrk": -177.06075
+        },
+        {
+            "desc": "Bohinj - gorivo",
+            "amount": -50.01,
+            "gk": "G",
+            "eventDate": "2023-01-07",
+            "paidDate": "2023-01-07",
+            "amountHrk": -376.800345
+        },
+        {
+            "desc": "Bohinj - boravišna pristojba",
+            "amount": -5,
+            "gk": "G",
+            "eventDate": "2023-01-05",
+            "paidDate": "2023-01-05",
+            "amountHrk": -37.6725
+        },
+        {
+            "desc": "Bohinj - štrudle",
+            "amount": -14.98,
+            "gk": "G",
+            "eventDate": "2023-01-06",
+            "paidDate": "2023-01-06",
+            "amountHrk": -112.86681000000002
+        },
+        {
+            "desc": "Bohinj - parking na Bledu",
+            "amount": -2.3,
+            "gk": "K",
+            "eventDate": "2023-01-07",
+            "paidDate": "2023-01-07",
+            "amountHrk": -17.329349999999998
+        },
+        {
+            "desc": "Bohinj - Karin vratila",
+            "amount": 77,
+            "gk": "K",
+            "eventDate": "2023-01-08",
+            "paidDate": "2023-01-08",
+            "amountHrk": 580.1565
+        },
+        {
+            "desc": "Podizanje gotovine K",
+            "amount": -100,
+            "gk": "K",
+            "eventDate": "2023-01-10",
+            "paidDate": "2023-01-10",
+            "amountHrk": -753.45
+        },
+        {
+            "desc": "Podizanje gotovine G",
+            "amount": 100,
+            "gk": "G",
+            "eventDate": "2023-01-10",
+            "paidDate": "2023-01-10",
+            "amountHrk": 753.45
+        },
+        {
+            "desc": "Burek",
+            "amount": -2.5,
+            "gk": "G",
+            "eventDate": "2023-01-10",
+            "paidDate": "2023-01-10",
+            "amountHrk": -18.83625
+        },
+        {
+            "desc": "Ručak - Fortica",
+            "amount": -150,
+            "gk": "G",
+            "eventDate": "2023-01-10",
+            "paidDate": "2023-01-10",
+            "amountHrk": -1130.175
+        },
+        {
+            "desc": "Aviteh - SmallRig Mini V-Mount Battery Plate 2987",
+            "amount": -30.52,
+            "gk": "K",
+            "eventDate": "2023-01-10",
+            "paidDate": "2023-01-10",
+            "amountHrk": -229.95294
+        },
+        {
+            "desc": "Soulcase - kafe",
+            "amount": -2.3,
+            "gk": "G",
+            "eventDate": "2023-01-11",
+            "paidDate": "2023-01-11",
+            "amountHrk": -17.329349999999998
+        },
+        {
+            "desc": "Rino - sladoled",
+            "amount": -5.5,
+            "gk": "G",
+            "eventDate": "2023-01-11",
+            "paidDate": "2023-01-11",
+            "amountHrk": -41.439750000000004
+        },
+        {
+            "desc": "Mama, tata i Matko - za diplomu",
+            "amount": 500,
+            "gk": "G",
+            "eventDate": "2023-01-12",
+            "paidDate": "2023-01-12",
+            "amountHrk": 3767.25
+        },
+        {
+            "desc": "Soulcase - Hard Place - burek i hrenovka u pecivu",
+            "amount": -6.38,
+            "gk": "G",
+            "eventDate": "2023-01-13",
+            "paidDate": "2023-01-13",
+            "amountHrk": -48.07011
+        },
+        {
+            "desc": "Soulcase - Hard Place - KFC",
+            "amount": -6.9,
+            "gk": "K",
+            "eventDate": "2023-01-13",
+            "paidDate": "2023-01-13",
+            "amountHrk": -51.98805000000001
+        },
+        {
+            "desc": "Soulcase - Hard Place - cestarina",
+            "amount": -18.4,
+            "gk": "G",
+            "eventDate": "2023-01-13",
+            "paidDate": "2023-01-13",
+            "amountHrk": -138.63479999999998
+        },
+        {
+            "desc": "Soulcase - Hard Place - dobio za cestarinu",
+            "amount": 20,
+            "gk": "G",
+            "eventDate": "2023-01-13",
+            "paidDate": "2023-01-13",
+            "amountHrk": 150.69
+        },
+        {
+            "desc": "Soulcase - Hard Place - čaj u Book-u",
+            "amount": -2,
+            "gk": "G",
+            "eventDate": "2023-01-13",
+            "paidDate": "2023-01-13",
+            "amountHrk": -15.069
+        },
+        {
+            "desc": "Polog gotovine G",
+            "amount": -30,
+            "gk": "G",
+            "eventDate": "2023-01-15",
+            "paidDate": "2023-01-15",
+            "amountHrk": -226.03500000000003
+        },
+        {
+            "desc": "Polog gotovine K",
+            "amount": 30,
+            "gk": "K",
+            "eventDate": "2023-01-15",
+            "paidDate": "2023-01-15",
+            "amountHrk": 226.03500000000003
+        },
+        {
+            "desc": "Gibonni - ulaznice",
+            "amount": -46.8,
+            "gk": "K",
+            "eventDate": "2023-01-15",
+            "paidDate": "2023-01-15",
+            "amountHrk": -352.6146
+        },
+        {
+            "desc": "Cuga - Arijan i Lea",
+            "amount": -9,
+            "gk": "G",
+            "eventDate": "2023-01-18",
+            "paidDate": "2023-01-18",
+            "amountHrk": -67.8105
+        },
+        {
+            "desc": "Chasing Nord - spotovi Ænd Now i Last Rain on Earth",
+            "amount": -450,
+            "gk": "G",
+            "eventDate": "2023-02-08",
+            "paidDate": "2023-02-08",
+            "amountHrk": -3390.525
+        },
+        {
+            "desc": "Chasing Nord - kaput za svirke",
+            "planiraniamount": -160,
+            "gk": "G",
+            "eventDate": "2023-02-16",
+            "amountHrk": 0,
+            "planiraniamountHrk": -1205.52
+        },
+        {
+            "desc": "Chasing Nord - otkup CD-a - Dallas",
+            "planiraniamount": -92,
+            "eventDate": "2023-02-17",
+            "amountHrk": 0,
+            "planiraniamountHrk": -693.1740000000001
+        },
+        {
+            "desc": "Zalando - Novčanik za kovanice",
+            "amount": -13.51,
+            "gk": "K",
+            "eventDate": "2023-01-24",
+            "paidDate": "2023-01-24",
+            "amountHrk": -101.791095
+        },
+        {
+            "desc": "Kava s Tajči",
+            "amount": -4.91,
+            "gk": "G",
+            "eventDate": "2023-01-22",
+            "paidDate": "2023-01-22",
+            "amountHrk": -36.994395000000004
+        },
+        {
+            "desc": "Soulcase - cuga",
+            "amount": -1.75,
+            "gk": "G",
+            "eventDate": "2023-01-23",
+            "paidDate": "2023-01-23",
+            "amountHrk": -13.185375
+        },
+        {
+            "desc": "Rino - Nisi Više Moja Bol",
+            "amount": 135,
+            "gk": "G",
+            "eventDate": "2023-01-21",
+            "paidDate": "2023-01-24",
+            "amountHrk": 1017.1575
+        },
+        {
+            "desc": "Sjednica Općinskog vijeća Općine Kostrena 01.02.2023.",
+            "amount": 153,
+            "gk": "G",
+            "eventDate": "2023-01-31",
+            "paidDate": "2023-02-05",
+            "amountHrk": 1152.7785000000001
+        },
+        {
+            "desc": "Rino - kava",
+            "amount": -5.5,
+            "gk": "G",
+            "eventDate": "2023-01-24",
+            "paidDate": "2023-01-24",
+            "amountHrk": -41.439750000000004
+        },
+        {
+            "desc": "CN - proba Pula - kava",
+            "amount": -1,
+            "gk": "G",
+            "eventDate": "2023-01-25",
+            "paidDate": "2023-01-25",
+            "amountHrk": -7.5345
+        },
+        {
+            "desc": "CN - proba Pula - McDonald's",
+            "amount": -6.75,
+            "gk": "G",
+            "eventDate": "2023-01-25",
+            "paidDate": "2023-01-25",
+            "amountHrk": -50.857875
+        },
+        {
+            "desc": "Šišanje",
+            "amount": -7,
+            "gk": "G",
+            "eventDate": "2023-01-25",
+            "paidDate": "2023-01-25",
+            "amountHrk": -52.7415
+        },
+        {
+            "desc": "Parking - šišanje",
+            "amount": -1.2,
+            "gk": "K",
+            "eventDate": "2023-01-25",
+            "paidDate": "2023-01-25",
+            "amountHrk": -9.0414
+        },
+        {
+            "desc": "Tilta Adjustable Cold Shoe Mounting Bracket",
+            "amount": -36.5,
+            "gk": "K",
+            "eventDate": "2023-01-30",
+            "paidDate": "2023-01-30",
+            "amountHrk": -275.00925
+        },
+        {
+            "desc": "Cuga - Arijan i Lea",
+            "amount": -5,
+            "gk": "G",
+            "eventDate": "2023-01-30",
+            "paidDate": "2023-01-30",
+            "amountHrk": -37.6725
+        },
+        {
+            "desc": "Fabula - ZTC - Valentinovo",
+            "amount": 40,
+            "gk": "K",
+            "eventDate": "2023-02-01",
+            "paidDate": "2023-02-15",
+            "amountHrk": 301.38
+        },
+        {
+            "desc": "Naknada za vođenje računa 01/23",
+            "amount": -1.58,
+            "gk": "K",
+            "eventDate": "2023-01-31",
+            "paidDate": "2023-01-31",
+            "amountHrk": -11.904510000000002
+        },
+        {
+            "desc": "Bus do grada i natrag",
+            "amount": -3.1,
+            "gk": "G",
+            "eventDate": "2023-02-01",
+            "paidDate": "2023-02-01",
+            "amountHrk": -23.35695
+        },
+        {
+            "desc": "Kava s Monikom",
+            "amount": -5,
+            "gk": "G",
+            "eventDate": "2023-02-01",
+            "paidDate": "2023-02-01",
+            "amountHrk": -37.6725
+        },
+        {
+            "desc": "Cuga s Marijom",
+            "amount": -6.6,
+            "gk": "G",
+            "eventDate": "2023-02-02",
+            "paidDate": "2023-02-02",
+            "amountHrk": -49.7277
+        },
+        {
+            "desc": "Matko - Đir od 10. mjeseca",
+            "amount": -5.47,
+            "gk": "G",
+            "eventDate": "2023-02-02",
+            "paidDate": "2023-02-02",
+            "amountHrk": -41.213715
+        },
+        {
+            "desc": "Poštarina za povrat iFi Uno",
+            "amount": -2.6,
+            "gk": "K",
+            "eventDate": "2023-02-03",
+            "paidDate": "2023-02-03",
+            "amountHrk": -19.5897
+        },
+        {
+            "desc": "Povrat novaca za iFi Uno",
+            "amount": 89.85,
+            "gk": "K",
+            "eventDate": "2023-02-05",
+            "paidDate": "2023-02-05",
+            "amountHrk": 676.974825
+        },
+        {
+            "desc": "Obnova domene i hostinga za chasingnord.com",
+            "amount": -28.2,
+            "gk": "K",
+            "eventDate": "2023-02-20",
+            "paidDate": "2023-02-20",
+            "amountHrk": -212.4729
+        },
+        {
+            "desc": "Tama HT730B Ergo Rider",
+            "amount": -258,
+            "gk": "G",
+            "eventDate": "2023-02-05",
+            "paidDate": "2023-02-05",
+            "amountHrk": -1943.901
+        },
+        {
+            "desc": "Hardcase HN14SDX Deluxe Snare Case",
+            "amount": -115,
+            "gk": "G",
+            "eventDate": "2023-02-05",
+            "paidDate": "2023-02-05",
+            "amountHrk": -866.4675000000001
+        },
+        {
+            "desc": "Hardcase HN36W Hardware Case",
+            "amount": -225,
+            "gk": "G",
+            "eventDate": "2023-02-05",
+            "paidDate": "2023-02-05",
+            "amountHrk": -1695.2625
+        },
+        {
+            "desc": "K&M 13500 Percussion Table",
+            "amount": -85,
+            "gk": "G",
+            "eventDate": "2023-02-05",
+            "paidDate": "2023-02-05",
+            "amountHrk": -640.4325
+        },
+        {
+            "desc": "Cuga, burek i hrenovka u tijestu - Soulcase",
+            "amount": -7.96,
+            "gk": "G",
+            "eventDate": "2023-02-04",
+            "paidDate": "2023-02-04",
+            "amountHrk": -59.97462
+        },
+        {
+            "desc": "Bus do doma",
+            "amount": -2.52,
+            "gk": "K",
+            "eventDate": "2023-02-07",
+            "paidDate": "2023-02-07",
+            "amountHrk": -18.98694
+        },
+        {
+            "desc": "Šišanje",
+            "amount": -6,
+            "gk": "G",
+            "eventDate": "2023-02-08",
+            "paidDate": "2023-02-08",
+            "amountHrk": -45.207
+        },
+        {
+            "desc": "Parking za Kaiser Immobilien",
+            "amount": -1.9,
+            "gk": "K",
+            "eventDate": "2023-02-07",
+            "paidDate": "2023-02-07",
+            "amountHrk": -14.31555
+        },
+        {
+            "desc": "Kaiser Immobilien",
+            "amount": 70,
+            "gk": "G",
+            "eventDate": "2023-02-07",
+            "paidDate": "2023-02-07",
+            "amountHrk": 527.4150000000001
+        },
+        {
+            "desc": "Mama",
+            "amount": 21.4,
+            "gk": "G",
+            "eventDate": "2023-02-08",
+            "paidDate": "2023-02-08",
+            "amountHrk": 161.2383
+        },
+        {
+            "desc": "Buket za Karin",
+            "amount": -15,
+            "gk": "G",
+            "eventDate": "2023-02-09",
+            "paidDate": "2023-02-09",
+            "amountHrk": -113.01750000000001
+        },
+        {
+            "desc": "Zlatno Krilo",
+            "amount": -3,
+            "gk": "G",
+            "eventDate": "2023-02-09",
+            "paidDate": "2023-02-09",
+            "amountHrk": -22.6035
+        },
+        {
+            "desc": "Soulcase - cuga",
+            "amount": -6.9,
+            "gk": "G",
+            "eventDate": "2023-02-11",
+            "paidDate": "2023-02-11",
+            "amountHrk": -51.98805000000001
+        },
+        {
+            "desc": "CN - čizme za nastup",
+            "amount": -40,
+            "gk": "G",
+            "eventDate": "2023-02-12",
+            "paidDate": "2023-02-12",
+            "amountHrk": -301.38
+        },
+        {
+            "desc": "Rino - ručak na Platku",
+            "amount": -15.2,
+            "gk": "G",
+            "eventDate": "2023-02-12",
+            "paidDate": "2023-02-12",
+            "amountHrk": -114.5244
+        },
+        {
+            "desc": "Mama",
+            "amount": 20,
+            "gk": "G",
+            "eventDate": "2023-02-12",
+            "paidDate": "2023-02-12",
+            "amountHrk": 150.69
+        },
+        {
+            "desc": "Soulcase - oglasi za Hungry Eyes",
+            "amount": -15,
+            "gk": "K",
+            "eventDate": "2023-02-14",
+            "paidDate": "2023-02-14",
+            "amountHrk": -113.01750000000001
+        },
+        {
+            "desc": "Musicshop - P77 koža, mrežica i Moongel",
+            "amount": -60,
+            "gk": "K",
+            "eventDate": "2023-02-14",
+            "paidDate": "2023-02-14",
+            "amountHrk": -452.07000000000005
+        },
+        {
+            "desc": "Zagreb - Chasing Nord - Dom sportova - parking",
+            "amount": -3.2,
+            "gk": "K",
+            "eventDate": "2023-02-17",
+            "paidDate": "2023-02-17",
+            "amountHrk": -24.110400000000002
+        },
+        {
+            "desc": "Zagreb - Chasing Nord",
+            "amount": -1.7,
+            "gk": "G",
+            "eventDate": "2023-02-17",
+            "paidDate": "2023-02-17",
+            "amountHrk": -12.80865
+        },
+        {
+            "desc": "Samobor - Rino i Lara - pizza",
+            "amount": -15.5,
+            "gk": "G",
+            "eventDate": "2023-02-19",
+            "paidDate": "2023-02-19",
+            "amountHrk": -116.78475
+        },
+        {
+            "desc": "Samobor - Rino i Lara - kremšnite",
+            "amount": -8,
+            "gk": "G",
+            "eventDate": "2023-02-19",
+            "paidDate": "2023-02-19",
+            "amountHrk": -60.276
+        },
+        {
+            "desc": "Samobor - Rino i Lara - voda na pumpi",
+            "amount": -1.72,
+            "gk": "K",
+            "eventDate": "2023-02-19",
+            "paidDate": "2023-02-19",
+            "amountHrk": -12.959340000000001
+        },
+        {
+            "desc": "Javna tribina \"Odvojeno prikupljanje otpada\"",
+            "planiraniamount": 150,
+            "gk": "G",
+            "eventDate": "2023-02-26",
+            "amountHrk": 0,
+            "planiraniamountHrk": 1130.175
+        },
+        {
+            "desc": "Rino - Ni u tvome srcu",
+            "amount": 135,
+            "gk": "G",
+            "eventDate": "2023-02-24",
+            "paidDate": "2023-03-01",
+            "amountHrk": 1017.1575
+        },
+        {
+            "desc": "Rino - Odjednom ti",
+            "amount": 135,
+            "gk": "G",
+            "eventDate": "2023-03-13",
+            "paidDate": "2023-03-17",
+            "amountHrk": 1017.1575,
+            "planiraniamountHrk": 0
+        },
+        {
+            "desc": "Rino - Luna",
+            "planiraniamount": 135,
+            "gk": "G",
+            "amountHrk": 0,
+            "planiraniamountHrk": 1017.1575
+        },
+        {
+            "desc": "Ulaznice - Sum 41",
+            "amount": -40,
+            "gk": "G",
+            "eventDate": "2023-02-22",
+            "paidDate": "2023-03-01",
+            "amountHrk": -301.38
+        },
+        {
+            "desc": "Amazon - adapter za OM objektive, step-up ringovi",
+            "planiraniamount": -62,
+            "gk": "G",
+            "amountHrk": 0,
+            "planiraniamountHrk": -467.139
+        },
+        {
+            "desc": "Cuga - Karin i Bernarda",
+            "amount": -10.47,
+            "gk": "K",
+            "eventDate": "2023-02-25",
+            "paidDate": "2023-02-25",
+            "amountHrk": -78.886215
+        },
+        {
+            "desc": "Pikado - Karin i Bernarda",
+            "amount": -0.7,
+            "gk": "G",
+            "eventDate": "2023-02-25",
+            "paidDate": "2023-02-25",
+            "amountHrk": -5.27415
+        },
+        {
+            "desc": "Bernarda",
+            "amount": 4,
+            "gk": "G",
+            "eventDate": "2023-02-25",
+            "paidDate": "2023-02-25",
+            "amountHrk": 30.138
+        },
+        {
+            "desc": "Mama",
+            "amount": 20,
+            "gk": "G",
+            "eventDate": "2023-02-25",
+            "paidDate": "2023-02-25",
+            "amountHrk": 150.69
+        },
+        {
+            "desc": "CN - putni za Dom sportova",
+            "amount": 60,
+            "gk": "K",
+            "eventDate": "2023-02-27",
+            "paidDate": "2023-02-27",
+            "amountHrk": 452.07000000000005
+        },
+        {
+            "desc": "Cuga - Karin, Lea i Arijan",
+            "amount": -2,
+            "gk": "G",
+            "eventDate": "2023-02-28",
+            "paidDate": "2023-02-28",
+            "amountHrk": -15.069
+        },
+        {
+            "desc": "King's Malinska s Karin",
+            "amount": -17,
+            "gk": "G",
+            "eventDate": "2023-03-04",
+            "paidDate": "2023-03-04",
+            "amountHrk": -128.0865
+        },
+        {
+            "desc": "King's Malinska - Karin keksnula",
+            "amount": 6.4,
+            "gk": "K",
+            "eventDate": "2023-03-04",
+            "paidDate": "2023-03-04",
+            "amountHrk": 48.220800000000004
+        },
+        {
+            "desc": "Naknada za vođenje računa 02/23",
+            "amount": -1.59,
+            "gk": "K",
+            "eventDate": "2023-02-28",
+            "paidDate": "2023-02-28",
+            "amountHrk": -11.979855
+        },
+        {
+            "desc": "Tilta Seamless Focus Gear Ring 59mm - 61mm",
+            "amount": -3.8,
+            "gk": "K",
+            "eventDate": "2023-03-06",
+            "paidDate": "2023-03-06",
+            "amountHrk": -28.6311
+        },
+        {
+            "desc": "Parking - šišanje",
+            "amount": -2,
+            "gk": "K",
+            "eventDate": "2023-03-08",
+            "paidDate": "2023-03-08",
+            "amountHrk": -15.069
+        },
+        {
+            "desc": "Prodao Peak Design ruksak",
+            "amount": 140,
+            "gk": "G",
+            "eventDate": "2023-03-10",
+            "paidDate": "2023-03-10",
+            "amountHrk": 1054.8300000000002
+        },
+        {
+            "desc": "Prodao Peak Design remen.",
+            "amount": 39,
+            "gk": "K",
+            "eventDate": "2023-03-10",
+            "paidDate": "2023-03-10",
+            "amountHrk": 293.8455
+        },
+        {
+            "desc": "Mama",
+            "amount": 20,
+            "gk": "G",
+            "eventDate": "2023-03-10",
+            "paidDate": "2023-03-10",
+            "amountHrk": 150.69
+        },
+        {
+            "desc": "Cestarina - Rijeka - Zagreb",
+            "amount": -9.2,
+            "gk": "K",
+            "eventDate": "2023-03-10",
+            "paidDate": "2023-03-10",
+            "amountHrk": -69.31739999999999
+        },
+        {
+            "desc": "Cestarina - Zagreb - Rijeka",
+            "amount": -9.2,
+            "gk": "K",
+            "eventDate": "2023-03-10",
+            "paidDate": "2023-03-10",
+            "amountHrk": -69.31739999999999
+        },
+        {
+            "desc": "Gorivo",
+            "amount": -50.18,
+            "gk": "K",
+            "eventDate": "2023-03-10",
+            "paidDate": "2023-03-10",
+            "amountHrk": -378.08121
+        },
+        {
+            "desc": "Parking - Maksimir",
+            "amount": -1.5,
+            "gk": "K",
+            "eventDate": "2023-03-10",
+            "paidDate": "2023-03-10",
+            "amountHrk": -11.30175
+        },
+        {
+            "desc": "Gibonni - cuga u Areni",
+            "amount": -25.68,
+            "gk": "G",
+            "eventDate": "2023-03-09",
+            "paidDate": "2023-03-09",
+            "amountHrk": -193.48596
+        },
+        {
+            "desc": "Sjednica Općinskog vijeća Općine Kostrena 15.03.2023.",
+            "planiraniamount": 150,
+            "gk": "G.",
+            "eventDate": "2023-03-14",
+            "amountHrk": 0,
+            "planiraniamountHrk": 1130.175
+        },
+        {
+            "desc": "Rino - Spusti zid - miks",
+            "planiraniamount": 100,
+            "gk": "G",
+            "amountHrk": 0,
+            "planiraniamountHrk": 753.45
+        },
+        {
+            "desc": "Vinkovci - snimanje \"Sonce vo tvoite rusi kosi\"",
+            "amount": -13.9,
+            "gk": "G",
+            "eventDate": "2023-03-17",
+            "paidDate": "2023-03-17",
+            "amountHrk": -104.72955,
+            "planiraniamountHrk": 0
+        },
+        {
+            "desc": "Fabula - Povežimo se baštinom - jedna reklama",
+            "planiraniamount": 39.82,
+            "gk": "K",
+            "eventDate": "2023-03-15",
+            "amountHrk": 0,
+            "planiraniamountHrk": 300.02379
+        }
+    ]
+}
