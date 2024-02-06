@@ -8,7 +8,7 @@ import { addDoc, collection, deleteDoc, doc, getDocs, getFirestore, orderBy, que
 import NewCategoryModal from "./NewCategoryModal";
 import AreYouSureModal from "./AreYouSureModal";
 
-const EditCategoryModal = ({ show, close, selectedCategory }) => {
+const EditCategoryModal = ({ show, close, reload, selectedCategory }) => {
     /* const [showAreYouSureModal, setShowAreYouSureModal] = React.useState(false); */
     const selectedCategoryRef = doc(db, "category", selectedCategory.id);
 
@@ -52,6 +52,7 @@ const EditCategoryModal = ({ show, close, selectedCategory }) => {
             console.error(error);
         }
         close();
+        reload();
     };
 
     return (
@@ -61,7 +62,11 @@ const EditCategoryModal = ({ show, close, selectedCategory }) => {
                 odustani={close}
                 nemojOdustati={() => setShowAreYouSureModal(false)}
             /> */}
-            <Modal show={show} onHide={close}>
+            <Modal
+                show={show}
+                onHide={close}
+                centered
+            >
                 <Modal.Header closeButton>
                     <Modal.Title>Uredi kategoriju</Modal.Title>
                 </Modal.Header>
@@ -87,7 +92,7 @@ const EditCategoryModal = ({ show, close, selectedCategory }) => {
                     <div>
                         <Button
                             variant="secondary"
-                            onClick={close()} /* onClick={setShowAreYouSureModal(true)} */
+                            onClick={close}
                             className="mx-2"
                         >
                             Odustani

@@ -77,6 +77,10 @@ const EditModal = ({ selectedItem, show, close, reload }) => {
         });
     };
 
+    /* CHECK IF A USER STARTED EDITING THE ITEM */
+
+
+
     /* "TODAY" BUTTON */
 
     const handleTodayButton = e => {
@@ -165,161 +169,161 @@ const EditModal = ({ selectedItem, show, close, reload }) => {
                 close={() => setShowNewCategoryModal(false)}
                 reload={reload}
             />
-            {show && (
-                <Modal show={show} onHide={close}>
-                    <Modal.Header closeButton>
-                        <Modal.Title>Uredi stavku</Modal.Title>
-                    </Modal.Header>
-                    <Modal.Body>
-                        <Form>
-                            <Form.Group className="mb-3" controlId="desc">
-                                <Form.Label>Opis stavke</Form.Label>
-                                <Form.Control
-                                    as="textarea"
-                                    rows={2}
-                                    name="desc"
-                                    value={editItem.desc}
-                                    onChange={handleChange}
-                                />
-                            </Form.Group>
-                            <Form.Check
-                                type="radio"
-                                inline
-                                label="Prihod"
-                                name="incomeExpense"
-                                id="prihod"
-                                checked={editItem.incomeExpense === "prihod"}
+            {/* {show && ( */}
+            <Modal show={show} onHide={close}>
+                <Modal.Header closeButton>
+                    <Modal.Title>Uredi stavku</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                    <Form>
+                        <Form.Group className="mb-3" controlId="desc">
+                            <Form.Label>Opis stavke</Form.Label>
+                            <Form.Control
+                                as="textarea"
+                                rows={2}
+                                name="desc"
+                                value={editItem.desc}
                                 onChange={handleChange}
                             />
-                            <Form.Check
-                                className="mb-3"
-                                type="radio"
-                                inline
-                                label="Trošak"
-                                name="incomeExpense"
-                                id="trosak"
-                                checked={editItem.incomeExpense === "trosak"}
+                        </Form.Group>
+                        <Form.Check
+                            type="radio"
+                            inline
+                            label="Prihod"
+                            name="incomeExpense"
+                            id="prihod"
+                            checked={editItem.incomeExpense === "prihod"}
+                            onChange={handleChange}
+                        />
+                        <Form.Check
+                            className="mb-3"
+                            type="radio"
+                            inline
+                            label="Trošak"
+                            name="incomeExpense"
+                            id="trosak"
+                            checked={editItem.incomeExpense === "trosak"}
+                            onChange={handleChange}
+                        />
+                        <br></br>
+                        <Form.Label>Iznos</Form.Label>
+                        <InputGroup className="mb-3">
+                            <Form.Control
+                                type="number"
+                                name="amount"
+                                aria-label="Iznos"
+                                onChange={handleChange}
+                                value={editItem.amount}
+                            />
+                            <InputGroup.Text>€</InputGroup.Text>
+                        </InputGroup>
+                        <Form.Check
+                            type="radio"
+                            inline
+                            label="Gotovina"
+                            name="paymentType"
+                            id="gotovina"
+                            checked={editItem.paymentType === "gotovina"}
+                            onChange={handleChange}
+                        />
+                        <Form.Check
+                            className="mb-3"
+                            type="radio"
+                            inline
+                            label="Kartica"
+                            name="paymentType"
+                            id="kartica"
+                            checked={editItem.paymentType === "kartica"}
+                            onChange={handleChange}
+                        />
+                        <br></br>
+                        <Form.Label>Datum događaja</Form.Label>
+                        <Form.Group
+                            className="mb-3 d-flex align-items-end"
+                            controlId="eventDate"
+                        >
+                            <Form.Control
+                                name="eventDate"
+                                type="date"
+                                value={editItem.eventDate}
                                 onChange={handleChange}
                             />
-                            <br></br>
-                            <Form.Label>Iznos</Form.Label>
-                            <InputGroup className="mb-3">
-                                <Form.Control
-                                    type="number"
-                                    name="amount"
-                                    aria-label="Iznos"
-                                    onChange={handleChange}
-                                    value={editItem.amount}
-                                />
-                                <InputGroup.Text>€</InputGroup.Text>
-                            </InputGroup>
-                            <Form.Check
-                                type="radio"
-                                inline
-                                label="Gotovina"
-                                name="paymentType"
-                                id="gotovina"
-                                checked={editItem.paymentType === "gotovina"}
-                                onChange={handleChange}
-                            />
-                            <Form.Check
-                                className="mb-3"
-                                type="radio"
-                                inline
-                                label="Kartica"
-                                name="paymentType"
-                                id="kartica"
-                                checked={editItem.paymentType === "kartica"}
-                                onChange={handleChange}
-                            />
-                            <br></br>
-                            <Form.Label>Datum događaja</Form.Label>
-                            <Form.Group
-                                className="mb-3 d-flex align-items-end"
-                                controlId="eventDate"
-                            >
-                                <Form.Control
-                                    name="eventDate"
-                                    type="date"
-                                    value={editItem.eventDate}
-                                    onChange={handleChange}
-                                />
-                                <Button
-                                    variant="primary"
-                                    id="danas-event-date"
-                                    onClick={handleTodayButton}
-                                >
-                                    Danas
-                                </Button>
-                            </Form.Group>
-                            <Form.Label>Datum plaćanja</Form.Label>
-                            <Form.Group
-                                className="mb-3 d-flex align-items-end"
-                                controlId="paidDate"
-                            >
-                                <Form.Control
-                                    name="paidDate"
-                                    type="date"
-                                    value={editItem.paidDate}
-                                    onChange={handleChange}
-                                />
-                                <Button
-                                    variant="primary"
-                                    id="danas-paid-date"
-                                    onClick={handleTodayButton}
-                                >
-                                    Danas
-                                </Button>
-                            </Form.Group>
-                            <Form.Group
-                                className="mb-3 d-flex align-items-end"
-                                controlId="category"
-                            >
-                                <Form.Select
-                                    name="category"
-                                    type="select"
-                                    defaultValue={"Razno"}
-                                    onChange={handleChange}
-                                >
-                                    {categoriesList.map(category => (
-                                        <option
-                                            value={category.name}
-                                            key={category.id}
-                                        >
-                                            {category.name}
-                                        </option>
-                                    ))}
-                                    <option>+ Dodaj novu kategoriju</option>
-                                </Form.Select>
-                            </Form.Group>
-                        </Form>
-                    </Modal.Body>
-                    <Modal.Footer
-                        style={{
-                            display: "flex",
-                            justifyContent: "space-between"
-                        }}
-                    >
-                        <div>
-                            <Button variant="danger" onClick={setShowAreYouSureDeleteModal(true)}>
-                                Izbriši stavku
-                            </Button>
-                        </div>
-                        <div>
                             <Button
-                                variant="secondary"
-                                onClick={setShowAreYouSureModal(true)}
-                                className="mx-2"
+                                variant="primary"
+                                id="danas-event-date"
+                                onClick={handleTodayButton}
                             >
-                                Odustani
+                                Danas
                             </Button>
-                            <Button variant="primary" onClick={handleSave}>
-                                Spremi promjene
+                        </Form.Group>
+                        <Form.Label>Datum plaćanja</Form.Label>
+                        <Form.Group
+                            className="mb-3 d-flex align-items-end"
+                            controlId="paidDate"
+                        >
+                            <Form.Control
+                                name="paidDate"
+                                type="date"
+                                value={editItem.paidDate}
+                                onChange={handleChange}
+                            />
+                            <Button
+                                variant="primary"
+                                id="danas-paid-date"
+                                onClick={handleTodayButton}
+                            >
+                                Danas
                             </Button>
-                        </div>
-                    </Modal.Footer>
-                </Modal>
-            )}
+                        </Form.Group>
+                        <Form.Group
+                            className="mb-3 d-flex align-items-end"
+                            controlId="category"
+                        >
+                            <Form.Select
+                                name="category"
+                                type="select"
+                                defaultValue={"Razno"}
+                                onChange={handleChange}
+                            >
+                                {categoriesList.map(category => (
+                                    <option
+                                        value={category.name}
+                                        key={category.id}
+                                    >
+                                        {category.name}
+                                    </option>
+                                ))}
+                                <option>+ Dodaj novu kategoriju</option>
+                            </Form.Select>
+                        </Form.Group>
+                    </Form>
+                </Modal.Body>
+                <Modal.Footer
+                    style={{
+                        display: "flex",
+                        justifyContent: "space-between"
+                    }}
+                >
+                    <div>
+                        <Button variant="danger" onClick={() => setShowAreYouSureDeleteModal(true)}>
+                            Izbriši stavku
+                        </Button>
+                    </div>
+                    <div>
+                        <Button
+                            variant="secondary"
+                            onClick={() => setShowAreYouSureModal(true)}
+                            className="mx-2"
+                        >
+                            Odustani
+                        </Button>
+                        <Button variant="primary" onClick={handleSave}>
+                            Spremi promjene
+                        </Button>
+                    </div>
+                </Modal.Footer>
+            </Modal>
+            {/* )} */}
         </div>
     );
 };

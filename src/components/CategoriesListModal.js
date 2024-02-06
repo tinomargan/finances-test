@@ -7,7 +7,7 @@ import EditCategoryModal from "./EditCategoryModal";
 
 const CategoriesListModal = ({ show, close }) => {
     const [categoryList, setCategoryList] = React.useState([]);
-    const [selectedCategory, setSelectedCategory] = React.useState([]);
+    const [selectedCategory, setSelectedCategory] = React.useState(null);
     const [showEditCategoryModal, setShowEditCategoryModal] = React.useState(false);
     const [loading, setLoading] = React.useState(true);
 
@@ -83,8 +83,8 @@ const CategoriesListModal = ({ show, close }) => {
                                 <Button
                                     variant="secondary"
                                     onClick={() => {
-                                        setSelectedCategory(category);
                                         handleEdit();
+                                        setSelectedCategory(category);
                                     }
                                     }
                                 >

@@ -34,7 +34,6 @@ export default function Content() {
                 setLoading(false);
             }
         };
-
         fetchItemList();
     }, []);
 
