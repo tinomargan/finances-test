@@ -1,4 +1,5 @@
 import React from "react";
+import trash_icon from "../images/trash-solid.svg";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
@@ -170,7 +171,12 @@ const EditModal = ({ selectedItem, show, close, reload }) => {
                 reload={reload}
             />
             {/* {show && ( */}
-            <Modal show={show} onHide={close}>
+            <Modal
+                show={show}
+                onHide={close}
+                backdrop="static"
+                keyboard={false}
+            >
                 <Modal.Header closeButton>
                     <Modal.Title>Uredi stavku</Modal.Title>
                 </Modal.Header>
@@ -252,6 +258,7 @@ const EditModal = ({ selectedItem, show, close, reload }) => {
                                 variant="primary"
                                 id="danas-event-date"
                                 onClick={handleTodayButton}
+                                className="ms-3"
                             >
                                 Danas
                             </Button>
@@ -271,6 +278,7 @@ const EditModal = ({ selectedItem, show, close, reload }) => {
                                 variant="primary"
                                 id="danas-paid-date"
                                 onClick={handleTodayButton}
+                                className="ms-3"
                             >
                                 Danas
                             </Button>
@@ -301,23 +309,29 @@ const EditModal = ({ selectedItem, show, close, reload }) => {
                 <Modal.Footer
                     style={{
                         display: "flex",
-                        justifyContent: "space-between"
+                        justifyContent: "space-between",
                     }}
                 >
                     <div>
-                        <Button variant="danger" onClick={() => setShowAreYouSureDeleteModal(true)}>
-                            Izbriši stavku
+                        <Button
+                            variant="danger"
+                            onClick={() => setShowAreYouSureDeleteModal(true)}
+                        >
+                            <img src={trash_icon} alt="Izbriši stavku" className="form-delete-icon" />
                         </Button>
                     </div>
                     <div>
                         <Button
                             variant="secondary"
-                            onClick={() => setShowAreYouSureModal(true)}
+                            onClick={close}
                             className="mx-2"
                         >
                             Odustani
                         </Button>
-                        <Button variant="primary" onClick={handleSave}>
+                        <Button
+                            variant="primary"
+                            onClick={handleSave}
+                        >
                             Spremi promjene
                         </Button>
                     </div>

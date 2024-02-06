@@ -268,6 +268,7 @@ const NewItemModal = ({ show, close, reload }) => {
                                 variant="primary"
                                 id="danas-event-date"
                                 onClick={handleTodayButton}
+                                className="ms-3"
                             >
                                 Danas
                             </Button>
@@ -286,6 +287,7 @@ const NewItemModal = ({ show, close, reload }) => {
                                 variant="primary"
                                 id="danas-paid-date"
                                 onClick={handleTodayButton}
+                                className="ms-3"
                             >
                                 Danas
                             </Button>

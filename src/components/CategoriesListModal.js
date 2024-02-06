@@ -1,4 +1,5 @@
 import React from "react";
+import trash_icon from "../images/trash-solid.svg";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import { addDoc, collection, getDocs, getFirestore, orderBy, query, Timestamp } from "firebase/firestore";
@@ -79,6 +80,14 @@ const CategoriesListModal = ({ show, close }) => {
                     {categoryList.map(category => (
                         <div className="categories-wrapper" key={category.id}>
                             <div className="category-name">{category.name}</div>
+                            <div className="category-delete">
+                                <Button
+                                    variant="danger"
+                                    onClick={handleDelete}
+                                >
+                                    <img src={trash_icon} alt="Izbriši stavku" className="form-delete-icon" />
+                                </Button>
+                            </div>
                             <div className="category-edit">
                                 <Button
                                     variant="secondary"
@@ -89,14 +98,6 @@ const CategoriesListModal = ({ show, close }) => {
                                     }
                                 >
                                     Uredi
-                                </Button>
-                            </div>
-                            <div className="category-delete">
-                                <Button
-                                    variant="danger"
-                                    onClick={handleDelete}
-                                >
-                                    Izbriši
                                 </Button>
                             </div>
                         </div>

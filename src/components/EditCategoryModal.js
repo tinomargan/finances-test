@@ -77,6 +77,7 @@ const EditCategoryModal = ({ show, close, reload, selectedCategory }) => {
                             <Form.Control
                                 type="text"
                                 name="name"
+                                autoFocus
                                 value={editCategory.name}
                                 onChange={handleChange}
                             />
@@ -86,7 +87,7 @@ const EditCategoryModal = ({ show, close, reload, selectedCategory }) => {
                 <Modal.Footer
                     style={{
                         display: "flex",
-                        justifyContent: "space-between"
+                        justifyContent: "flex-end"
                     }}
                 >
                     <div>
