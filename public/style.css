@@ -389,14 +389,26 @@
     margin: auto 0;
 }
 
-.category-edit {
+.category-delete {
     text-align: right;
     grid-row: 1/1;
     grid-column: 2/3;
 }
 
-.category-delete {
+.category-edit {
     text-align: right;
     grid-row: 1/1;
     grid-column: 3/3;
+}
+
+
+
+
+/* ******* DELETE ICON FORM ******* */
+
+
+
+
+.form-delete-icon {
+    height: 18px;
 }
