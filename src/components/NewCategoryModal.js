@@ -3,9 +3,16 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import { db } from "../config/firebase";
-import { addDoc, collection, getDocs, getFirestore, orderBy, query } from "firebase/firestore";
+import {
+    addDoc,
+    collection,
+    getDocs,
+    getFirestore,
+    orderBy,
+    query
+} from "firebase/firestore";
 
-const NewCategoryModal = ({ show, close }) => {
+const NewCategoryModal = ({ show, close, handleDodaj }) => {
     const [categoryList, setCategoryList] = React.useState([]);
     const [doesCategoryExist, setDoesCategoryExist] = React.useState(false);
     const [newCategory, setNewCategory] = React.useState({
@@ -17,10 +24,16 @@ const NewCategoryModal = ({ show, close }) => {
         const fetchCategoryList = async () => {
             try {
                 const firestoreInstance = getFirestore();
-                const categoryCollectionReference = collection(firestoreInstance, "category");
-                const sortedCategories = query(categoryCollectionReference, orderBy("name", "asc"))
+                const categoryCollectionReference = collection(
+                    firestoreInstance,
+                    "category"
+                );
+                const sortedCategories = query(
+                    categoryCollectionReference,
+                    orderBy("name", "asc")
+                );
                 const data = await getDocs(sortedCategories);
-                const filteredData = data.docs.map((doc) => ({
+                const filteredData = data.docs.map(doc => ({
                     ...doc.data(),
                     id: doc.id
                 }));
@@ -35,7 +48,11 @@ const NewCategoryModal = ({ show, close }) => {
 
     const handleChange = e => {
         for (let i = 0; i < categoryList.length; i++) {
-            if (e.target.value.toLowerCase() === categoryList[i].name.toLowerCase() || e.target.value.toLowerCase() === "") {
+            if (
+                e.target.value.toLowerCase() ===
+                    categoryList[i].name.toLowerCase() ||
+                e.target.value.toLowerCase() === ""
+            ) {
                 setDoesCategoryExist(true);
                 return;
             }
@@ -47,36 +64,19 @@ const NewCategoryModal = ({ show, close }) => {
         setDoesCategoryExist(false);
     };
 
-    const handleDodaj = async () => {
-        try {
-            await addDoc(categoryCollectionReference, {
-                ...newCategory,
-                name: newCategory.name
-            });
-            console.log(newCategory.name);
-        } catch (error) {
-            console.error(error);
-        }
-        close();
-    }
-
     return (
         <div>
             {show && (
-                <Modal
-                    show={show}
-                    onHide={close}
-                    centered
-                    animation={false}
-                >
+                <Modal show={show} onHide={close} centered animation={false}>
                     <Modal.Header>
-                        <Modal.Title>
-                            Dodaj novu kategoriju
-                        </Modal.Title>
+                        <Modal.Title>Dodaj novu kategoriju</Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
                         <Form>
-                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Group
+                                className="mb-3"
+                                controlId="formBasicEmail"
+                            >
                                 <Form.Control
                                     type="text"
                                     placeholder="Unesi ime kategorije"
@@ -86,10 +86,14 @@ const NewCategoryModal = ({ show, close }) => {
                         </Form>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={() => close()}>
+                        <Button variant="secondary" onClick={close}>
                             Odustani
                         </Button>
-                        <Button variant="primary" onClick={handleDodaj} disabled={doesCategoryExist}>
+                        <Button
+                            variant="primary"
+                            onClick={() => handleDodaj(newCategory)}
+                            disabled={doesCategoryExist}
+                        >
                             Dodaj
                         </Button>
                     </Modal.Footer>

@@ -4,16 +4,46 @@ import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import { db } from "../config/firebase";
-import { addDoc, collection, getDocs, getFirestore, orderBy, query, Timestamp } from "firebase/firestore";
+import {
+    addDoc,
+    collection,
+    getDocs,
+    getFirestore,
+    orderBy,
+    query,
+    Timestamp
+} from "firebase/firestore";
 import NewCategoryModal from "./NewCategoryModal";
 import AreYouSureModal from "./AreYouSureModal";
 
-const NewItemModal = ({ show, close, reload }) => {
+const NewItemModal = ({ show, close, selectedItem, reload }) => {
+    /* INITIAL VALUES */
+
+    const [newItem, setNewItem] = React.useState(
+        selectedItem || {
+            desc: "",
+            incomeExpense: null,
+            amount: 0,
+            paymentType: null,
+            eventDate: null,
+            paidDate: null,
+            dateCreated: todayDateForDateCreatedAndDateModified,
+            category: "Razno"
+        }
+    );
+    console.log(newItem);
+
+    const isInEditMode = !!selectedItem;
+    console.log(isInEditMode);
+
     const [showAreYouSureModal, setShowAreYouSureModal] = React.useState(false);
-    const [showNewCategoryModal, setShowNewCategoryModal] = React.useState(false);
+    const [showNewCategoryModal, setShowNewCategoryModal] = React.useState(
+        false
+    );
     const [categoriesList, setCategoriesList] = React.useState([]);
     const [isDropdownOpen, setIsDropdownOpen] = React.useState(true);
     const itemCollectionReference = collection(db, "item");
+    const categoryCollectionReference = collection(db, "category");
 
     /* TODAY'S DATE INITIAL VALUES */
 
@@ -22,27 +52,57 @@ const NewItemModal = ({ show, close, reload }) => {
 
     /* FETCHING CATEGORIES FROM THE DATABASE */
 
-    React.useEffect(() => {
-        const fetchCategoriesList = async () => {
-            try {
-                const firestoreInstance = getFirestore();
-                const categoryCollectionReference = collection(firestoreInstance, "category");
-                const sortedCategories = query(categoryCollectionReference, orderBy("name", "asc"))
-                const data = await getDocs(sortedCategories);
-                const filteredData = data.docs.map((doc) => ({
-                    ...doc.data(),
-                    id: doc.id
-                }));
-                setCategoriesList(filteredData);
-                /* setLoading(false); */
-            } catch (error) {
-                console.error(error);
-                /* setLoading(false); */
-            }
-        };
+    const fetchCategoriesList = async () => {
+        try {
+            const firestoreInstance = getFirestore();
+            const categoryCollectionReference = collection(
+                firestoreInstance,
+                "category"
+            );
+            const sortedCategories = query(
+                categoryCollectionReference,
+                orderBy("name", "asc")
+            );
+            const data = await getDocs(sortedCategories);
+            const filteredData = data.docs.map(doc => ({
+                ...doc.data(),
+                id: doc.id
+            }));
+            setCategoriesList(filteredData);
+            /* setLoading(false); */
+        } catch (error) {
+            console.error(error);
+            /* setLoading(false); */
+        }
+    };
 
+    React.useEffect(() => {
         fetchCategoriesList();
     }, []);
+
+    React.useEffect(() => {
+        setNewItem(selectedItem);
+    }, [selectedItem]);
+
+    /* DODAVANJE NOVE KATEGORIJE */
+
+    const handleDodaj = async newCategory => {
+        try {
+            await addDoc(categoryCollectionReference, {
+                ...newCategory,
+                name: newCategory.name
+            });
+            console.log(newCategory.name);
+            fetchCategoriesList();
+            setNewItem(newItem => ({
+                ...newItem,
+                category: newCategory.name
+            }));
+        } catch (error) {
+            console.error(error);
+        }
+        setShowNewCategoryModal(false);
+    };
 
     /* ARE YOU SURE MODAL FUNCTIONS */
 
@@ -56,32 +116,23 @@ const NewItemModal = ({ show, close, reload }) => {
             eventDate: null,
             paidDate: null,
             category: "Razno"
-        })
+        });
         setShowAreYouSureModal(false);
         close();
-    }
+    };
 
     const handleNemojOdustati = () => {
         console.log("ne odustajem");
         setShowAreYouSureModal(false);
-    }
-
-    /* INITIAL VALUES */
-
-    const [newItem, setNewItem] = React.useState({
-        desc: "",
-        incomeExpense: null,
-        amount: 0,
-        paymentType: null,
-        eventDate: null,
-        paidDate: null,
-        dateCreated: todayDateForDateCreatedAndDateModified,
-        category: "Razno"
-    });
+    };
 
     /* HANDLING CHANGES */
 
     const handleChange = e => {
+        if (e.target.value === "+ Nova kategorija") {
+            console.log(e.target.value);
+            setShowNewCategoryModal(true);
+        }
         setNewItem(newItem => ({
             ...newItem,
             [e.target.name]:
@@ -89,13 +140,9 @@ const NewItemModal = ({ show, close, reload }) => {
         }));
     };
 
-    const handleClick = e => {
-        if (e.target.value === "+ Nova kategorija" && isDropdownOpen === true) {
-            console.log(e.target.value);
-            setShowNewCategoryModal(true);
-        }
+    /* const handleClick = e => {
         setIsDropdownOpen(true)
-    };
+    }; */
 
     /* CHECK IF A USER STARTED TO INPUT THE VALUES */
 
@@ -185,6 +232,7 @@ const NewItemModal = ({ show, close, reload }) => {
                 show={showNewCategoryModal}
                 close={() => setShowNewCategoryModal(false)}
                 reload={reload}
+                handleDodaj={handleDodaj}
             />
             <Modal show={show} onHide={close} fullscreen animation={false}>
                 <Modal.Header>
@@ -199,6 +247,7 @@ const NewItemModal = ({ show, close, reload }) => {
                                 rows={2}
                                 autoFocus
                                 name="desc"
+                                value={newItem && newItem.desc}
                                 onChange={handleChange}
                             />
                         </Form.Group>
@@ -299,9 +348,9 @@ const NewItemModal = ({ show, close, reload }) => {
                             <Form.Select
                                 name="category"
                                 type="select"
-                                defaultValue={"Razno"}
                                 onChange={handleChange}
-                                onClick={handleClick}
+                                value={newItem && newItem.category}
+                                /* onClick={handleClick} */
                             >
                                 {categoriesList.map(category => (
                                     <option
@@ -317,10 +366,7 @@ const NewItemModal = ({ show, close, reload }) => {
                     </Form>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button
-                        variant="secondary"
-                        onClick={startedToInputValues}
-                    >
+                    <Button variant="secondary" onClick={startedToInputValues}>
                         Odustani
                     </Button>
                     <Button variant="primary" onClick={handleSave}>

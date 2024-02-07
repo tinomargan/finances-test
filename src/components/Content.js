@@ -1,8 +1,15 @@
 import React from "react";
 import edit_icon from "../images/edit-icon.png";
 import EditModal from "./EditModal";
-import { getDocs, collection, getFirestore, query, orderBy } from "firebase/firestore";
+import {
+    getDocs,
+    collection,
+    getFirestore,
+    query,
+    orderBy
+} from "firebase/firestore";
 import { Spinner } from "react-bootstrap";
+import NewItemModal from "./NewItemModal";
 
 export default function Content() {
     const [itemList, setItemList] = React.useState([]);
@@ -20,10 +27,16 @@ export default function Content() {
         const fetchItemList = async () => {
             try {
                 const firestoreInstance = getFirestore();
-                const itemCollectionReference = collection(firestoreInstance, "item");
-                const sortedItems = query(itemCollectionReference, orderBy("dateCreated", "desc"))
+                const itemCollectionReference = collection(
+                    firestoreInstance,
+                    "item"
+                );
+                const sortedItems = query(
+                    itemCollectionReference,
+                    orderBy("dateCreated", "desc")
+                );
                 const data = await getDocs(sortedItems);
-                const filteredData = data.docs.map((doc) => ({
+                const filteredData = data.docs.map(doc => ({
                     ...doc.data(),
                     id: doc.id
                 }));
@@ -51,7 +64,7 @@ export default function Content() {
 
     const handleShowEditModal = () => {
         setShowEditModal(true);
-    }
+    };
 
     /* SHOWING THE FETCHED DATA FROM THE DATABASE */
 
@@ -60,7 +73,7 @@ export default function Content() {
     return (
         <div className="content--wrapper">
             {showEditModal && (
-                <EditModal
+                <NewItemModal
                     show={showEditModal}
                     close={() => setShowEditModal(false)}
                     selectedItem={selectedItem}
@@ -76,8 +89,8 @@ export default function Content() {
                     <div className="content--item-eventDate">
                         {item.eventDate !== null
                             ? (item.eventDateForEditModal = new Date(
-                                item.eventDate.seconds * 1000
-                            ).toLocaleDateString("en-ca"))
+                                  item.eventDate.seconds * 1000
+                              ).toLocaleDateString("en-ca"))
                             : null}
                     </div>
                     <div className="content--item-paidDate-text">
@@ -86,8 +99,8 @@ export default function Content() {
                     <div className="content--item-paidDate">
                         {item.paidDate !== null
                             ? (item.paidDateForEditModal = new Date(
-                                item.paidDate.seconds * 1000
-                            ).toLocaleDateString("en-ca"))
+                                  item.paidDate.seconds * 1000
+                              ).toLocaleDateString("en-ca"))
                             : null}
                     </div>
                     <div
@@ -114,7 +127,7 @@ export default function Content() {
                     <div className="content--item-cash-card">
                         {item.paymentType !== null
                             ? item.paymentType.charAt(0).toUpperCase() +
-                            item.paymentType.slice(1)
+                              item.paymentType.slice(1)
                             : "/"}
                     </div>
                     <div className="content--item-edit">
