@@ -1,54 +1,56 @@
 import React from "react";
+import trash_icon from "../images/trash-solid.svg";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Form from "react-bootstrap/Form";
 import InputGroup from "react-bootstrap/InputGroup";
 import { db } from "../config/firebase";
-import {
-    addDoc,
-    collection,
-    getDocs,
-    getFirestore,
-    orderBy,
-    query,
-    Timestamp
-} from "firebase/firestore";
+import { addDoc, collection, deleteDoc, doc, getDocs, getFirestore, orderBy, query, Timestamp, updateDoc } from "firebase/firestore";
 import NewCategoryModal from "./NewCategoryModal";
 import AreYouSureModal from "./AreYouSureModal";
+import AreYouSureDeleteModal from "./AreYouSureDeleteModal";
 
 const NewItemModal = ({ show, close, selectedItem, reload }) => {
-    /* INITIAL VALUES */
-
-    const [newItem, setNewItem] = React.useState(
-        selectedItem || {
-            desc: "",
-            incomeExpense: null,
-            amount: 0,
-            paymentType: null,
-            eventDate: null,
-            paidDate: null,
-            dateCreated: todayDateForDateCreatedAndDateModified,
-            category: "Razno"
-        }
-    );
-    console.log(newItem);
-
-    const isInEditMode = !!selectedItem;
-    console.log(isInEditMode);
-
-    const [showAreYouSureModal, setShowAreYouSureModal] = React.useState(false);
-    const [showNewCategoryModal, setShowNewCategoryModal] = React.useState(
-        false
-    );
-    const [categoriesList, setCategoriesList] = React.useState([]);
-    const [isDropdownOpen, setIsDropdownOpen] = React.useState(true);
-    const itemCollectionReference = collection(db, "item");
-    const categoryCollectionReference = collection(db, "category");
-
     /* TODAY'S DATE INITIAL VALUES */
 
     const todayDate = new Date().toLocaleDateString("en-ca");
     const todayDateForDateCreatedAndDateModified = new Date().toUTCString();
+
+    /* INITIAL VALUES */
+
+    const [newItem, setNewItem] = React.useState({
+        ...selectedItem
+    } || {
+        desc: "",
+        incomeExpense: null,
+        amount: 0,
+        paymentType: null,
+        eventDate: null,
+        paidDate: null,
+        dateCreated: todayDateForDateCreatedAndDateModified,
+        category: "Razno"
+    }
+    );
+
+    const [showAreYouSureModal, setShowAreYouSureModal] = React.useState(false);
+    const [showAreYouSureDeleteModal, setShowAreYouSureDeleteModal] = React.useState(false);
+    const [showNewCategoryModal, setShowNewCategoryModal] = React.useState(false);
+    const [categoriesList, setCategoriesList] = React.useState([]);
+
+    React.useEffect(() => {
+        fetchCategoriesList();
+    }, []);
+
+    React.useEffect(() => {
+        setNewItem(selectedItem);
+    }, [selectedItem]);
+
+    const isInEditMode = !!selectedItem;
+
+    /* CONVERTING DATES FROM THE SELECTED ITEM TO BE DISPLAYED IN UI */
+
+    const itemCollectionReference = collection(db, "item");
+    const categoryCollectionReference = collection(db, "category");
 
     /* FETCHING CATEGORIES FROM THE DATABASE */
 
@@ -75,14 +77,6 @@ const NewItemModal = ({ show, close, selectedItem, reload }) => {
             /* setLoading(false); */
         }
     };
-
-    React.useEffect(() => {
-        fetchCategoriesList();
-    }, []);
-
-    React.useEffect(() => {
-        setNewItem(selectedItem);
-    }, [selectedItem]);
 
     /* DODAVANJE NOVE KATEGORIJE */
 
@@ -129,10 +123,6 @@ const NewItemModal = ({ show, close, selectedItem, reload }) => {
     /* HANDLING CHANGES */
 
     const handleChange = e => {
-        if (e.target.value === "+ Nova kategorija") {
-            console.log(e.target.value);
-            setShowNewCategoryModal(true);
-        }
         setNewItem(newItem => ({
             ...newItem,
             [e.target.name]:
@@ -140,31 +130,34 @@ const NewItemModal = ({ show, close, selectedItem, reload }) => {
         }));
     };
 
-    /* const handleClick = e => {
-        setIsDropdownOpen(true)
-    }; */
+    /* ADD A NEW CATEGORY */
+
+    const handleNewCategory = () => {
+        console.log("nova kategorija");
+        setShowNewCategoryModal(true);
+    }
 
     /* CHECK IF A USER STARTED TO INPUT THE VALUES */
 
-    function startedToInputValues() {
-        if (newItem.desc !== "") {
+    /* function startedToInputValues() {
+        if (newItem.desc !== "" || newItem.desc !== selectedItem.desc) {
             setShowAreYouSureModal(true);
-        } else if (newItem.amount !== 0) {
+        } else if (newItem.amount !== 0 || newItem.amount !== selectedItem.amount) {
             setShowAreYouSureModal(true);
-        } else if (newItem.incomeExpense != null) {
+        } else if (newItem.incomeExpense != null || newItem.incomeExpense !== selectedItem.incomeExpense) {
             setShowAreYouSureModal(true);
-        } else if (newItem.paymentType != null) {
+        } else if (newItem.paymentType != null || newItem.paymentType !== selectedItem.paymentType) {
             setShowAreYouSureModal(true);
-        } else if (newItem.eventDate != null) {
+        } else if (newItem.eventDate != null || newItem.eventDate !== selectedItem.eventDate) {
             setShowAreYouSureModal(true);
-        } else if (newItem.paidDate != null) {
+        } else if (newItem.paidDate != null || newItem.paidDate !== selectedItem.paidDate) {
             setShowAreYouSureModal(true);
-        } else if (newItem.category !== "Razno") {
+        } else if (newItem.category !== "Razno" || newItem.category !== selectedItem.category) {
             setShowAreYouSureModal(true);
         } else {
             close();
         }
-    }
+    } */
 
     /* "TODAY" BUTTON */
 
@@ -218,8 +211,26 @@ const NewItemModal = ({ show, close, selectedItem, reload }) => {
             console.error(error);
         }
         close();
+    };
+
+    /* DELETING THE ITEM FROM THE DATABASE */
+
+    const handleIzbrisi = async () => {
+        const selectedItemRef = doc(db, "item", selectedItem.id);
+        try {
+            await deleteDoc(selectedItemRef);
+        } catch (error) {
+            console.error(error);
+        }
+        close();
         reload();
     };
+
+    const handleNemojIzbrisati = () => {
+        setShowAreYouSureDeleteModal(false);
+    }
+
+    console.log(selectedItem);
 
     return (
         <div>
@@ -227,6 +238,11 @@ const NewItemModal = ({ show, close, selectedItem, reload }) => {
                 show={showAreYouSureModal}
                 odustani={() => handleOdustani()}
                 nemojOdustati={() => handleNemojOdustati()}
+            />
+            <AreYouSureDeleteModal
+                show={showAreYouSureDeleteModal}
+                izbrisi={() => handleIzbrisi()}
+                nemojIzbrisati={() => handleNemojIzbrisati()}
             />
             <NewCategoryModal
                 show={showNewCategoryModal}
@@ -236,7 +252,10 @@ const NewItemModal = ({ show, close, selectedItem, reload }) => {
             />
             <Modal show={show} onHide={close} fullscreen animation={false}>
                 <Modal.Header>
-                    <Modal.Title>Nova stavka</Modal.Title>
+                    {isInEditMode
+                        ? <Modal.Title>Uredi stavku</Modal.Title>
+                        : <Modal.Title>Nova stavka</Modal.Title>
+                    }
                 </Modal.Header>
                 <Modal.Body>
                     <Form>
@@ -261,6 +280,8 @@ const NewItemModal = ({ show, close, selectedItem, reload }) => {
                                 label="Prihod"
                                 name="incomeExpense"
                                 id="prihod"
+                                checked={newItem && newItem.incomeExpense === "prihod"}
+                                onChange={handleChange}
                             />
                             <Form.Check
                                 className="mb-3"
@@ -269,6 +290,8 @@ const NewItemModal = ({ show, close, selectedItem, reload }) => {
                                 label="Trošak"
                                 name="incomeExpense"
                                 id="trosak"
+                                checked={newItem && newItem.incomeExpense === "trosak"}
+                                onChange={handleChange}
                             />
                         </Form.Group>
                         <br></br>
@@ -278,6 +301,7 @@ const NewItemModal = ({ show, close, selectedItem, reload }) => {
                                 type="number"
                                 name="amount"
                                 aria-label="Iznos"
+                                value={newItem && newItem.amount}
                                 onChange={handleChange}
                             />
                             <InputGroup.Text>€</InputGroup.Text>
@@ -292,6 +316,8 @@ const NewItemModal = ({ show, close, selectedItem, reload }) => {
                                 label="Gotovina"
                                 name="paymentType"
                                 id="gotovina"
+                                checked={newItem && newItem.paymentType === "gotovina"}
+                                onChange={handleChange}
                             />
                             <Form.Check
                                 className="mb-3"
@@ -300,57 +326,64 @@ const NewItemModal = ({ show, close, selectedItem, reload }) => {
                                 label="Kartica"
                                 name="paymentType"
                                 id="kartica"
+                                checked={newItem && newItem.paymentType === "kartica"}
+                                onChange={handleChange}
                             />
                         </Form.Group>
                         <br></br>
                         <Form.Label>Datum događaja</Form.Label>
                         <Form.Group
-                            className="mb-3 d-flex align-items-end"
+                            className="mb-3 d-flex align-items-end date-and-category-wrapper"
                             controlId="eventDate"
                         >
                             <Form.Control
+                                className="me-4 date-and-category-item"
                                 name="eventDate"
                                 type="date"
+                                value={newItem && newItem.eventDate}
                                 onChange={handleChange}
                             />
                             <Button
+                                className="date-and-category-button"
                                 variant="primary"
                                 id="danas-event-date"
                                 onClick={handleTodayButton}
-                                className="ms-3"
                             >
                                 Danas
                             </Button>
                         </Form.Group>
                         <Form.Label>Datum plaćanja</Form.Label>
                         <Form.Group
-                            className="mb-3 d-flex align-items-end"
+                            className="mb-3 d-flex align-items-end date-and-category-wrapper"
                             controlId="paidDate"
                         >
                             <Form.Control
+                                className="me-4 date-and-category-item"
                                 name="paidDate"
                                 type="date"
+                                value={newItem && newItem.paidDate}
                                 onChange={handleChange}
                             />
                             <Button
+                                className="date-and-category-button"
                                 variant="primary"
                                 id="danas-paid-date"
                                 onClick={handleTodayButton}
-                                className="ms-3"
                             >
                                 Danas
                             </Button>
                         </Form.Group>
+                        <Form.Label>Kategorija</Form.Label>
                         <Form.Group
-                            className="mb-3 d-flex align-items-end"
+                            className="mb-3 d-flex align-items-end date-and-category-wrapper"
                             controlId="category"
                         >
                             <Form.Select
+                                className="me-4 date-and-category-item"
                                 name="category"
                                 type="select"
                                 onChange={handleChange}
                                 value={newItem && newItem.category}
-                                /* onClick={handleClick} */
                             >
                                 {categoriesList.map(category => (
                                     <option
@@ -360,19 +393,51 @@ const NewItemModal = ({ show, close, selectedItem, reload }) => {
                                         {category.name}
                                     </option>
                                 ))}
-                                <option>+ Nova kategorija</option>
                             </Form.Select>
+                            <Button
+                                variant="outline-primary"
+                                className="date-and-category-button"
+                                id="new-category-button"
+                                onClick={handleNewCategory}
+                            >
+                                +
+                            </Button>
                         </Form.Group>
                     </Form>
                 </Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={startedToInputValues}>
-                        Odustani
-                    </Button>
-                    <Button variant="primary" onClick={handleSave}>
-                        Unesi novu stavku
-                    </Button>
-                </Modal.Footer>
+                {isInEditMode
+                    ?
+                    <Modal.Footer>
+                        <Button
+                            variant="danger"
+                            className="me-auto"
+                            onClick={() => setShowAreYouSureDeleteModal(true)}
+                        >
+                            <img src={trash_icon} alt="Izbriši stavku" className="form-delete-icon" />
+                        </Button>
+                        <Button
+                            variant="secondary"
+                            onClick={close}
+                        >
+                            Odustani
+                        </Button>
+                        <Button
+                            variant="primary"
+                            onClick={handleSave}
+                        >
+                            Spremi promjene
+                        </Button>
+                    </Modal.Footer>
+                    :
+                    <Modal.Footer>
+                        <Button variant="secondary" onClick={close}>
+                            Odustani
+                        </Button>
+                        <Button variant="primary" onClick={handleSave}>
+                            Unesi novu stavku
+                        </Button>
+                    </Modal.Footer>
+                }
             </Modal>
         </div>
     );

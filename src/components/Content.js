@@ -13,7 +13,7 @@ import NewItemModal from "./NewItemModal";
 
 export default function Content() {
     const [itemList, setItemList] = React.useState([]);
-    const [showEditModal, setShowEditModal] = React.useState(false);
+    const [showNewItemModal, setShowNewItemModal] = React.useState(false);
     const [selectedItem, setSelectedItem] = React.useState(null);
     const [loading, setLoading] = React.useState(true);
 
@@ -48,7 +48,7 @@ export default function Content() {
             }
         };
         fetchItemList();
-    }, []);
+    }, [showNewItemModal]);
 
     /* LOADING SPINNER */
 
@@ -62,8 +62,8 @@ export default function Content() {
         );
     }
 
-    const handleShowEditModal = () => {
-        setShowEditModal(true);
+    const handleShowNewItemModal = () => {
+        setShowNewItemModal(true);
     };
 
     /* SHOWING THE FETCHED DATA FROM THE DATABASE */
@@ -72,10 +72,10 @@ export default function Content() {
 
     return (
         <div className="content--wrapper">
-            {showEditModal && (
+            {showNewItemModal && (
                 <NewItemModal
-                    show={showEditModal}
-                    close={() => setShowEditModal(false)}
+                    show={showNewItemModal}
+                    close={() => setShowNewItemModal(false)}
                     selectedItem={selectedItem}
                     reload={reload}
                 />
@@ -89,8 +89,8 @@ export default function Content() {
                     <div className="content--item-eventDate">
                         {item.eventDate !== null
                             ? (item.eventDateForEditModal = new Date(
-                                  item.eventDate.seconds * 1000
-                              ).toLocaleDateString("en-ca"))
+                                item.eventDate.seconds * 1000
+                            ).toLocaleDateString("en-ca"))
                             : null}
                     </div>
                     <div className="content--item-paidDate-text">
@@ -99,8 +99,8 @@ export default function Content() {
                     <div className="content--item-paidDate">
                         {item.paidDate !== null
                             ? (item.paidDateForEditModal = new Date(
-                                  item.paidDate.seconds * 1000
-                              ).toLocaleDateString("en-ca"))
+                                item.paidDate.seconds * 1000
+                            ).toLocaleDateString("en-ca"))
                             : null}
                     </div>
                     <div
@@ -127,7 +127,7 @@ export default function Content() {
                     <div className="content--item-cash-card">
                         {item.paymentType !== null
                             ? item.paymentType.charAt(0).toUpperCase() +
-                              item.paymentType.slice(1)
+                            item.paymentType.slice(1)
                             : "/"}
                     </div>
                     <div className="content--item-edit">
@@ -136,7 +136,7 @@ export default function Content() {
                             alt="edit"
                             className="content--item-edit-img"
                             onClick={() => {
-                                handleShowEditModal();
+                                handleShowNewItemModal();
                                 setSelectedItem(item);
                             }}
                         />

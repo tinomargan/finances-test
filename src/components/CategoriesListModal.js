@@ -2,14 +2,17 @@ import React from "react";
 import trash_icon from "../images/trash-solid.svg";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import { addDoc, collection, getDocs, getFirestore, orderBy, query, Timestamp } from "firebase/firestore";
+import { db } from "../config/firebase";
+import { addDoc, collection, deleteDoc, doc, getDocs, getFirestore, orderBy, query, Timestamp, updateDoc } from "firebase/firestore";
 import { Spinner } from "react-bootstrap";
 import EditCategoryModal from "./EditCategoryModal";
+import AreYouSureDeleteModal from "./AreYouSureDeleteModal";
 
 const CategoriesListModal = ({ show, close }) => {
     const [categoryList, setCategoryList] = React.useState([]);
     const [selectedCategory, setSelectedCategory] = React.useState(null);
     const [showEditCategoryModal, setShowEditCategoryModal] = React.useState(false);
+    const [showAreYouSureDeleteModal, setShowAreYouSureDeleteModal] = React.useState(false);
     const [loading, setLoading] = React.useState(true);
 
     /* RELOAD CONTENT */
@@ -17,7 +20,6 @@ const CategoriesListModal = ({ show, close }) => {
     const reload = () => window.location.reload();
 
     /* DOHVAĆANJE KATEGORIJA IZ BAZE */
-
 
     React.useEffect(() => {
         const fetchCategoryList = async () => {
@@ -39,15 +41,28 @@ const CategoriesListModal = ({ show, close }) => {
         };
 
         fetchCategoryList();
-    }, []);
+    }, [show, showEditCategoryModal, showAreYouSureDeleteModal]);
 
     const handleEdit = () => {
         console.log("editko ");
         setShowEditCategoryModal(true);
     }
 
-    const handleDelete = () => {
-        console.log("deleteko ");
+    /* DELETING THE ITEM FROM THE DATABASE */
+
+    const handleIzbrisi = async () => {
+        try {
+            const selectedCategoryRef = doc(db, "category", selectedCategory.id);
+            console.log("deleteko ");
+            await deleteDoc(selectedCategoryRef);
+        } catch (error) {
+            console.error(error);
+        }
+        setShowAreYouSureDeleteModal(false);
+    };
+
+    const handleNemojIzbrisati = () => {
+        setShowAreYouSureDeleteModal(false);
     }
 
     /* LOADING SPINNER */
@@ -62,6 +77,8 @@ const CategoriesListModal = ({ show, close }) => {
         );
     }
 
+    console.log(categoryList);
+
     return (
         <div>
             {showEditCategoryModal && (
@@ -72,6 +89,11 @@ const CategoriesListModal = ({ show, close }) => {
                     reload={reload}
                 />
             )}
+            <AreYouSureDeleteModal
+                show={showAreYouSureDeleteModal}
+                izbrisi={() => handleIzbrisi()}
+                nemojIzbrisati={() => handleNemojIzbrisati()}
+            />
             <Modal show={show} onHide={close} fullscreen animation={false}>
                 <Modal.Header>
                     <Modal.Title>Popis kategorija</Modal.Title>
@@ -83,7 +105,11 @@ const CategoriesListModal = ({ show, close }) => {
                             <div className="category-delete">
                                 <Button
                                     variant="danger"
-                                    onClick={handleDelete}
+                                    onClick={() => {
+                                        setShowAreYouSureDeleteModal(true);
+                                        setSelectedCategory(category);
+                                    }
+                                    }
                                 >
                                     <img src={trash_icon} alt="Izbriši stavku" className="form-delete-icon" />
                                 </Button>

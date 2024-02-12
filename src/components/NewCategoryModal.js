@@ -15,9 +15,7 @@ import {
 const NewCategoryModal = ({ show, close, handleDodaj }) => {
     const [categoryList, setCategoryList] = React.useState([]);
     const [doesCategoryExist, setDoesCategoryExist] = React.useState(false);
-    const [newCategory, setNewCategory] = React.useState({
-        name: ""
-    });
+    const [newCategory, setNewCategory] = React.useState({ name: "" });
     const categoryCollectionReference = collection(db, "category");
 
     React.useEffect(() => {
@@ -50,7 +48,7 @@ const NewCategoryModal = ({ show, close, handleDodaj }) => {
         for (let i = 0; i < categoryList.length; i++) {
             if (
                 e.target.value.toLowerCase() ===
-                    categoryList[i].name.toLowerCase() ||
+                categoryList[i].name.toLowerCase() ||
                 e.target.value.toLowerCase() === ""
             ) {
                 setDoesCategoryExist(true);
