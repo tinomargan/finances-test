@@ -368,6 +368,22 @@
 
 
 
+/* ******* NEW/EDIT ITEM MODAL ******* */
+
+
+
+
+.date-and-category-wrapper {}
+
+.date-and-category-item {}
+
+.date-and-category-button {
+    width: 100px;
+}
+
+
+
+
 /* ******* CATEGORIES MODAL ******* */
 
 
@@ -410,5 +426,8 @@
 
 
 .form-delete-icon {
-    height: 18px;
+    display: flex;
+    justify-content: flex-start;
+    height: 24px;
+    padding: 0.2rem;
 }
